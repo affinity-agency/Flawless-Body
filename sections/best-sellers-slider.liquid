@@ -1,0 +1,132 @@
+<div class="best-sellers-section my-5">
+  <div class="best-sellers-inner container">
+    <div class="row flex-column flex-md-row g-0 ">
+      <div class="best-sellers-info col-12 col-md-3 ps-md-5 pt-5 pb-5 pb-md-0">
+        <div class="best-sellers-title fs-1 lh-1 mb-md-4 mt-md-6">SHOP BY <span class="fw-bold"></br>BEST SELLERS</span></div>
+        <a class="best-sellers-url border border-dark btn btn-lg fs-3 px-4 py-3 rounded-0 d-none d-md-inline-block" href="{{ section.settings.shop_all_button_url }}">SHOP ALL</a>
+      </div>
+      
+      <div class="col-12 col-md-9">
+        <div class="d-flex position-relative h-100">
+          <div class="slider-nav prev "><span></span></div>
+        
+          <div class="swiper best-sellers-slider h-100">
+            <div class="swiper-wrapper h-100">
+              {% for product in section.settings.product_list %}
+                <div class="swiper-slide d-flex ">
+                  <div class="w-100 position-relative border">
+                    <div class="best-seller bg-white d-flex flex-column h-100 px-3 text-center">
+                      <div class="pt-4 mb-4">{{ product.featured_image | img_url: '200x200' | img_tag: product.featured_image.alt }}</div>
+                      <div class="best-seller-title fs-2 fw-bold mt-auto mb-5 px-5">
+                        <a href="{{ product.url }}" class="text-decoration-none stretched-link text-dark">{{ product.title }}</a>
+                      </div>
+                      <div class="pb-5 fs-2">{{ product.price | money | remove: '.00' }}</div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+  
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          
+          <div class="slider-nav next"><span></span></div>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5 d-md-none text-center">
+        <a class="best-sellers-url border border-dark btn btn-lg fs-3 px-4 py-3 rounded-0" href="{{ section.settings.shop_all_button_url }}">SHOP ALL</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Best Sellers Slider",
+    "settings": [
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Products",
+        "limit": 12
+      },
+      {
+        "type": "text",
+        "id": "shop_all_button_url",
+        "label": "Shop All Button URL"
+      }
+    ],
+    "presets": [{
+      "name": "Best Sellers Slider"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .slider-nav {
+    width: 40px;
+    min-width: 40px;
+    z-index: 10;
+    background-color: #027299;
+    display: flex;
+    align-items: center;
+    place-content: center;
+  }
+
+  .slider-nav.next {
+/*     right: -25px; */
+  }
+
+  .slider-nav.prev {
+/*     left: -25px; */
+  }
+
+  .slider-nav.next span::after {
+    content: "\276F";
+    display: block;
+    font-size: 24px;
+    color: white;
+  }
+
+  .slider-nav.prev span::after {
+    content: "\276E";
+    display: block;
+    font-size: 24px;
+    color: white;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const swiper = new Swiper('.best-sellers-slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3
+      },
+      767: {
+        slidesPerView: 2
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
+  document.querySelector('.slider-nav.next').addEventListener('click', function () {
+    document.querySelector('.swiper-button-next').click();
+  });
+
+  document.querySelector('.slider-nav.prev').addEventListener('click', function () {
+    document.querySelector('.swiper-button-prev').click();
+  });
+  
+{% endjavascript %}

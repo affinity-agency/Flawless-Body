@@ -1,0 +1,135 @@
+<div class="full-width-slider-cta" style="background-image: url({{ section.settings.background_image | image_url: width: 1900, height: 550 }}); ">
+  <div class="container">
+    <div class="row g-0 px-5 {{ section.settings.text_alignment }}">
+      <div class="col-12 col-lg-5 d-flex flex-column pt-5 my-4 my-md-0">
+        <div class="fs-1">{{ section.settings.title }}</div>
+        <div class="fs-3 my-2">{{ section.settings.description }}</div>
+
+        {% if section.settings.hero-button-url != '' %}
+          <div>
+            <a class="border border-dark btn btn-lg fs-3 px-4 py-3 rounded-0" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-7 mt-5 pt-4 regime">
+          <div class="swiper side-collection-slider h-100" style="min-height: 300px">
+            <div class="swiper-wrapper h-100">
+              {% for collection in section.settings.collections %}
+                <div class="swiper-slide h-100 position-relative" style="background-image: url({{ collection | image_url }}); background-repeat: no-repeat; background-size: cover;">
+                  <div class="d-flex h-100 flex-column px-4">
+                    <div class="category-title text-white mb-2 pt-4 fw-bold" style="z-index: 10">{{ collection.title }}</div>
+                    <div class="text-white mb-2" style="z-index: 10">{{ collection.description | strip_html | truncate: 100 }}</div>
+                    <a href="{{ collection.url }}" class="mt-auto pb-4 text-white text-decoration-none" style="z-index: 10">SHOP NOW</a>
+                  </div>
+                  <div class="dark-bg d-block"></div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "CTA W/ Collection Slider",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "CTA Panel Title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "CTA Panel Description"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "CTA Button Text"
+      },
+      {
+        "type": "text",
+        "id": "button_url",
+        "label": "CTA Button URL"
+      },
+      {
+        "type": "collection_list",
+        "id": "collections",
+        "label": "Collections",
+        "limit": 12
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "radio",
+        "id": "text_alignment",
+        "label": "Text side alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "flex-row-reverse",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      }
+    ],
+    "presets": [{
+      "name": "Full Width CTA W/ Collection Slider"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+  .full-width-slider-cta {
+    background-repeat: repeat; 
+    background-size: initial;
+  }
+
+  @media (min-width: 992px) {
+    .full-width-slider-cta {
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+  }
+  
+  .dark-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const swiper = new Swiper('.side-collection-slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoHeight: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3
+      },
+      767: {
+        slidesPerView: 2
+      },
+    }
+  });
+{% endjavascript %}

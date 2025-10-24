@@ -1,0 +1,300 @@
+{% doc %}
+  @prompt
+    bread crumbs
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-breadcrumbs-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-breadcrumbs-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-breadcrumbs-list-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: {{ block.settings.spacing }}px;
+    font-size: {{ block.settings.font_size }}px;
+    font-family: {{ block.settings.font_family.family }}, {{ block.settings.font_family.fallback_families }};
+    font-weight: {{ block.settings.font_family.weight }};
+  }
+
+  .ai-breadcrumbs-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.spacing }}px;
+  }
+
+  .ai-breadcrumbs-link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ai-breadcrumbs-link-{{ ai_gen_id }}:hover {
+    color: {{ block.settings.link_hover_color }};
+    text-decoration: underline;
+  }
+
+  .ai-breadcrumbs-separator-{{ ai_gen_id }} {
+    color: {{ block.settings.separator_color }};
+    user-select: none;
+  }
+
+  .ai-breadcrumbs-current-{{ ai_gen_id }} {
+    color: {{ block.settings.current_color }};
+  }
+
+  .ai-breadcrumbs-home-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.font_size }}px;
+    height: {{ block.settings.font_size }}px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .ai-breadcrumbs-home-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-breadcrumbs-list-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<nav
+  class="ai-breadcrumbs-{{ ai_gen_id }}"
+  aria-label="Breadcrumb"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-breadcrumbs-container-{{ ai_gen_id }}">
+    <ol class="ai-breadcrumbs-list-{{ ai_gen_id }}">
+      <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+        <a href="/" class="ai-breadcrumbs-link-{{ ai_gen_id }}" aria-label="Home">
+          {% if block.settings.show_home_icon %}
+            <span class="ai-breadcrumbs-home-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </span>
+          {% else %}
+            {{ block.settings.home_text }}
+          {% endif %}
+        </a>
+        <span class="ai-breadcrumbs-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+      </li>
+
+      {% if template == 'collection' and collection %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">{{ collection.title }}</span>
+        </li>
+      {% elsif template == 'product' and product %}
+        {% if collection %}
+          <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+            <a href="{{ collection.url }}" class="ai-breadcrumbs-link-{{ ai_gen_id }}">{{ collection.title }}</a>
+            <span class="ai-breadcrumbs-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+          </li>
+        {% endif %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">{{ product.title }}</span>
+        </li>
+      {% elsif template == 'page' and page %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">{{ page.title }}</span>
+        </li>
+      {% elsif template == 'blog' and blog %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">{{ blog.title }}</span>
+        </li>
+      {% elsif template == 'article' and article %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <a href="{{ blog.url }}" class="ai-breadcrumbs-link-{{ ai_gen_id }}">{{ blog.title }}</a>
+          <span class="ai-breadcrumbs-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+        </li>
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">{{ article.title }}</span>
+        </li>
+      {% elsif template == 'search' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Search results</span>
+        </li>
+      {% elsif template == 'cart' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Cart</span>
+        </li>
+      {% elsif template == 'list-collections' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Collections</span>
+        </li>
+      {% elsif template == 'account' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Account</span>
+        </li>
+      {% elsif template == 'login' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Login</span>
+        </li>
+      {% elsif template == 'register' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Register</span>
+        </li>
+      {% elsif template == '404' %}
+        <li class="ai-breadcrumbs-item-{{ ai_gen_id }}">
+          <span class="ai-breadcrumbs-current-{{ ai_gen_id }}" aria-current="page">Page not found</span>
+        </li>
+      {% endif %}
+    </ol>
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Breadcrumbs",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1600
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "font_picker",
+      "id": "font_family",
+      "label": "Font",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "spacing",
+      "min": 4,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Item spacing",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Home link"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_home_icon",
+      "label": "Show home icon",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "home_text",
+      "label": "Home text",
+      "default": "Home"
+    },
+    {
+      "type": "header",
+      "content": "Separator"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Separator",
+      "default": "/"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover",
+      "default": "#553369"
+    },
+    {
+      "type": "color",
+      "id": "current_color",
+      "label": "Current page",
+      "default": "#553369"
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator",
+      "default": "#999999"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Breadcrumbs"
+    }
+  ]
+}
+{% endschema %}

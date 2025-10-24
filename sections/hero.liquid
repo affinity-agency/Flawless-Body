@@ -1,0 +1,149 @@
+<div class="hero-section container-fluid py-6" style="background-image: url({{ section.settings.hero-background | image_url: width: 1900 }})">
+  <div class="container my-5 mx-auto row">
+    <div class="col-12 col-lg-8 col-xl-6 me-auto">
+      {% if section.settings.above-header-url != '' %}
+        <a href="{{ section.settings.above-header-url }}">
+          <img class="mb-4 w-100" src="{{ section.settings.above-header-image | image_url: width: 300 }}">
+        </a>
+      {% else %}
+          <img class="mb-4 w-100" src="{{ section.settings.above-header-image | image_url: width: 300 }}">
+      {% endif %}
+      
+      <h1 class="hero-title">{{ section.settings.hero-heading }}</h1>
+
+      <div class="hero-subtitle">{{ section.settings.hero-subtitle }}</div>
+    
+      <div class="hero-text">{{ section.settings.hero-text }}</div>
+
+      {% if section.settings.below-subtitle-url != '' %}
+        <a href="{{ section.settings.below-subtitle-url }}">
+          <img class="my-4 pt-5 w-100" src="{{ section.settings.below-subtitle-image | image_url: width: 300 }}">
+        </a>
+      {% else %}
+          <img class="my-4 pt-5 w-100" src="{{ section.settings.below-subtitle-image | image_url: width: 300 }}">
+      {% endif %}
+
+      {% if section.settings.hero-button-url != '' %}
+        <a href="{{ section.settings.hero-button-url }}" class="hero-button">SHOP THE RANGE</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "tag": "section",
+    "class": "hero-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hero-heading",
+        "label": "Hero Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "hero-subtitle",
+        "label": "Hero Subtitle Text"
+      },
+      {
+        "type": "richtext",
+        "id": "hero-text",
+        "label": "Hero Text"
+      },
+      {
+        "type": "text",
+        "id": "hero-button-url",
+        "label": "Hero Button URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero-background",
+        "label": "Hero Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "above-header-image",
+        "label": "Above Header Text Image"
+      },
+      {
+        "type": "text",
+        "id": "above-header-url",
+        "label": "Above Header Text Image URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "below-subtitle-image",
+        "label": "Below Subtitle Text Image"
+      },
+      {
+        "type": "text",
+        "id": "below-subtitle-url",
+        "label": "Below Subtitle Text Image URL"
+      }
+    ],
+    "presets": [{
+      "name": "Hero Section"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .hero-section img {
+    max-width: fit-content;
+  }
+
+  .hero-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+
+  .hero-section .hero-title {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'FuturaStd Book';
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 24px;
+    line-height: 1.4;
+    color: black;
+  }
+
+  .hero-section .hero-text {
+    font-size: 22px;
+    color: #2E9EBE;
+  }
+
+  .hero-section .hero-button {
+    background-color: #553369;
+    color: white;
+    border-radius: 100px;
+    padding: 0.75rem 3rem;
+    width: max-content;
+    font-size: 18px;
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+
+  @media (max-width: 576px) {
+    .hero-section .hero-title {
+      font-size: 26px;
+    }
+
+    .hero-section .hero-subtitle {
+      font-size: 20px;
+    }
+
+    .hero-section .hero-text {
+      font-size: 18px;
+    }
+    
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

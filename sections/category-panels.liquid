@@ -1,0 +1,81 @@
+<div class="py-5 container">
+  <div class="featured-products-section-heading mb-4 px-md-2">SHOP BY CATEGORY</div>
+  <div class="category-panels-section row m-auto g-0 gy-3 g-md-3">
+  {% for category in section.settings.categories %}
+    <div class="category-panel col-12 col-sm-6 col-lg-3">
+      <div class="category-inner-panel position-relative" style="background-image: url({{ category | image_url: width: 300 }})">
+        <div class="panel-footer">
+          <div class="category-title">{{ category.title }}</div>
+          <a href="{{ category.url }}" class="stretched-link">SHOP RANGE</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Category Panels Section",
+    "settings": [
+      {
+        "type": "collection_list",
+        "id": "categories",
+        "label": "Categories",
+        "limit": 4
+      }
+    ],
+    "presets": [{
+      "name": "Category Panels Section"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .category-panels-section {
+/*     display: flex; */
+/*     flex-wrap: wrap; */
+/*     margin: auto; */
+  }
+  
+  .category-panel {
+    height: 400px;
+  }
+
+  .category-panel .category-inner-panel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .category-panel .panel-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2ecf5;
+    padding: 1.5em;
+  }
+
+  .category-panel .panel-footer div.category-title {
+    font-size: 20px;
+    color: #553369;
+    font-weight: 400;
+    font-family: 'Poppins';
+  }
+
+  .category-panel .panel-footer a {
+    background-color: #553369;
+    padding: 0.25em;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0.75em;
+    font-weight: bold;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

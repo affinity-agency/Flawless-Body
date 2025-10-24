@@ -1,0 +1,289 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1761127424b2c85c4f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6ca9f93_prGNFx": {
+          "type": "ai_gen_block_6ca9f93",
+          "settings": {
+            "home_text": "Home",
+            "separator": "/",
+            "search_text": "Search",
+            "cart_text": "Cart",
+            "collections_text": "Collections",
+            "not_found_text": "Page not found",
+            "background_color": "#ffffff",
+            "link_color": "#553369",
+            "link_hover_color": "#121212",
+            "current_color": "#121212",
+            "separator_color": "#121212",
+            "font_size": 10,
+            "item_spacing": 8,
+            "padding_top": 20,
+            "padding_bottom": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6ca9f93_prGNFx"
+      ],
+      "settings": {}
+    },
+    "a21c08c9-320d-4e4d-95a2-27c5c946a10f": {
+      "type": "usp",
+      "custom_css": [
+        "a {text-decoration: none; display: inline-block; color: #553369;}",
+        "a div {float: right; padding-left: 10px;}"
+      ],
+      "settings": {
+        "first-usp-text": "FREE DELIVERY OVER £30/€100",
+        "first-usp-icon": "shopify://shop_images/icon_delivery.png",
+        "first-usp-url": "https://flawlessbody-shop.myshopify.com/pages/delivery-info",
+        "second-usp-text": "EST. AESTHETIC SKIN CLINIC SINCE 06",
+        "second-usp-icon": "shopify://shop_images/icon_established.png",
+        "second-usp-url": "https://www.flawlessbody.co.uk",
+        "third-usp-text": "OFFICIAL STOCKISTS OF ALL BRANDS",
+        "third-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "third-usp-url": "https://flawlessbody-shop.myshopify.com/collections/all",
+        "fourth-usp-text": "5 STAR REVIEWS ON REVIEW.IO",
+        "fourth-usp-icon": "shopify://shop_images/icon_reviews.png",
+        "fourth-usp-url": ""
+      }
+    },
+    "176112933908d02cb6": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "icon": "bottle",
+            "content": "<p>{{ product.metafields.custom.ingredients.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "HOW TO USE",
+            "icon": "clipboard",
+            "content": "<p>{{ product.metafields.custom.how_to_use.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING & RETURNS",
+            "icon": "truck",
+            "content": "",
+            "page": "delivery-info"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "collapsible-row-1",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "custom_liquid_wU9RU3": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".color-background-1 {max-width: 90%; margin: 50px auto 0 auto;}",
+        "#trustpilot-widget-trustbox-0-wrapper {z-index: 1 !important; position: relative;}",
+        "#product-reviewsio-carousel-widget,.my-5 {display: none !important;}"
+      ],
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>For orders over £30 and £5 for orders under £30.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Hassle-Free Exchanges",
+            "text": "<p>We will be happy to exchange any unopened product. The customer will be responsible for all delivery charges. Again we apply a limit of 28 days from receipt of order. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "166738500689a1de17": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "773d68e2-08d6-4c4a-9db9-d4b192912d8b": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15549038493836__773d68e2-08d6-4c4a-9db9-d4b192912d8b-16819035111826f014-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO HEAR  ABOUT OUR LATEST NEWS & OFFERS",
+            "heading_size": "h2"
+          }
+        },
+        "template--15549038493836__773d68e2-08d6-4c4a-9db9-d4b192912d8b-16819035111826f014-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--15549038493836__773d68e2-08d6-4c4a-9db9-d4b192912d8b-16819035111826f014-0",
+        "template--15549038493836__773d68e2-08d6-4c4a-9db9-d4b192912d8b-16819035111826f014-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "1761127424b2c85c4f",
+    "a21c08c9-320d-4e4d-95a2-27c5c946a10f",
+    "176112933908d02cb6",
+    "main",
+    "custom_liquid_wU9RU3",
+    "product-recommendations",
+    "multicolumn",
+    "166738500689a1de17",
+    "773d68e2-08d6-4c4a-9db9-d4b192912d8b"
+  ]
+}

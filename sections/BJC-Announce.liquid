@@ -1,0 +1,113 @@
+{% if section.settings.announcement_visibility %}
+<style>
+    .announcement {
+        font-size:{{ section.settings.announcement_text_size }}px; 
+        background-color: #553369; 
+        border-bottom: {{ section.settings.announcement_border_size}}px solid {{ section.settings.announcement_border_color }};
+        padding: {{ section.settings.announcement_padding}}px;
+        text-align: {{ section.settings.announcement_text_align }};
+        position: fixed;
+        top:0;
+        width:100%;z-index:11;
+    }
+  
+    .announcement p {color: {{ section.settings.announcement_text_color }};}
+    .announcement a {text-decoration: NONE;color:#ffffff;font-weight:bold;}
+    .announcement a:hover {text-decoration: none;}
+  @media screen and (max-width: 749px) {
+    .announcement p {width: {{ section.settings.announcement_mobilewidth }}px;}
+  }
+</style>
+
+<div class="announcement">{{ section.settings.announcement_text }}</div>
+
+{% endif %}
+
+{% schema %}
+{
+    "name": "BJC-announce",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "announcement_visibility",
+            "label": "Visibility (On / Off)",
+            "default": true
+        },
+        {
+            "type": "richtext",
+            "id": "announcement_text",
+            "label": "Text",
+            "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>"
+        },
+        {
+            "type": "range",
+            "id": "announcement_text_size",
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "announcement_mobilewidth",
+            "min": 200,
+            "max": 1000,
+            "step": 40,
+            "unit": "px",
+            "label": "Mobile Message Width",
+            "default": 800
+        },
+        {
+            "type": "color",
+            "id": "announcement_text_color",
+            "label": "Text color",
+            "default": "#000000"
+        },
+        {
+            "type": "color",
+            "id": "announcement_bg_color",
+            "label": "Background color",
+            "default": "#aaa"            
+        },
+        {
+            "type": "range",
+            "id": "announcement_border_size",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "unit": "px",
+            "label": "Border size",
+            "default": 4
+        },
+        {
+            "type": "color",
+            "id": "announcement_border_color",
+            "label": "Border color",
+            "default": "#333333"
+        },
+        {
+            "type": "range",
+            "id": "announcement_padding",
+            "min": 0,
+            "max": 20,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding",
+            "default": 5
+        },
+        {
+            "type": "select",
+            "id": "announcement_text_align",
+            "label": "Text alignment",
+            "options": [
+                { "value": "left", "label": "left"},
+                { "value": "center", "label": "center"},
+                { "value": "right", "label": "right"}
+            ],
+            "default": "center"
+        }
+    ]
+}
+{% endschema %}

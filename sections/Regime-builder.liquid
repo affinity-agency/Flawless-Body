@@ -1,0 +1,132 @@
+<div class="full-width-slider-cta" style="background-image: url({{ section.settings.background_image | image_url: width: 1900 }});background-repeat:repeat-y;background-size:initial">
+  <div class="container">
+    <div class="row g-0 px-5 {{ section.settings.text_alignment }}">
+      <div class="col-12 col-lg-5 d-flex flex-column pt-5 my-4 my-md-0">
+        <div class="fs-1">{{ section.settings.title }}</div>
+        <div class="fs-3 my-2">{{ section.settings.description }}</div>
+
+        {% if section.settings.hero-button-url != '' %}
+          <div>
+            <a class="border border-dark btn btn-lg fs-3 px-4 py-3 rounded-0" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-7 mt-5 pt-4 regime">
+              {% for collection in section.settings.collections %}
+                <div class="swiper-slide h-100 position-relative regimeBox" style="background-image: url({{ collection | image_url }}); background-repeat: no-repeat; background-size: cover;">
+                  <div class="regimeHeight">.</div>
+                  <div class="d-flex h-100 flex-column px-4">
+                    <div class="category-title text-white mb-2 pt-4 fw-bold" style="z-index: 10">{{ collection.title }}</div>
+                    <div class="text-white mb-2" style="z-index: 10">{{ collection.description | strip_html | truncate: 100 }}</div>
+                    <a href="{{ collection.url }}" class="regimeButton" style="z-index: 10">SHOP NOW</a>
+                  </div>
+                  <!--<div class="dark-bg d-block"></div>--><div style="clear:both;"></div>
+                </div>
+              {% endfor %}
+      </div>
+    </div>
+  <div style="clear:both;"></div>
+  <p>&nbsp;</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Regime Builder",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "CTA Panel Title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "CTA Panel Description"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "CTA Button Text"
+      },
+      {
+        "type": "text",
+        "id": "button_url",
+        "label": "CTA Button URL"
+      },
+      {
+        "type": "collection_list",
+        "id": "collections",
+        "label": "Collections",
+        "limit": 12
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "radio",
+        "id": "text_alignment",
+        "label": "Text side alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "flex-row-reverse",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      }
+    ],
+    "presets": [{
+      "name": "Regime Builder"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+  .full-width-slider-cta {
+    background-repeat: repeat; 
+    background-size: initial;
+  }
+
+  @media (min-width: 992px) {
+    .full-width-slider-cta {
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+  }
+  
+  .dark-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .regime {display:block;width:100%;clear:both;text-align:center;}
+  .regime .swiper-slide {max-width:19%;width:100%;overflow:hidden;margin:0 0.5%;}
+  .regimeBox {float:left;background-position: center center!important;background-color:#ffffff!important;background-size:contain!important;}
+  .regimeBox .category-title {text-align:center;color:#027299!important;text-transform:uppercase;font-weight:200!important;font-size:18pt;}
+  .regimeButton {position:absolute!important;bottom:10px;width:88%;background-color:#553369;padding:0.25em;border-radius:100px;font-weight:700;color:#ffffff;text-decoration:none;}
+  .regimeButton:hover {color:#ffffff;}
+  .regimeHeight {min-height:350px;display:block;height:100%;float:left;color:#ffffff;}
+    @media (max-width: 1200px) {
+      .regime {text-align:center;}
+      .regimeBox {display:inline-block;float:none;}
+      .regime .swiper-slide {max-width: 30%;width: 100%;overflow: hidden;max-height: 400px;height: 100%;margin: 0.5% 0.5%;}
+      .regimeHeight {min-height:450px;}
+    }
+    @media (max-width: 700px) {
+      .regime {text-align:center;}
+      .regime .swiper-slide {max-width:100%;width:100%;overflow:hidden;}
+      .regimeBox {}
+    }
+{% endstylesheet %}

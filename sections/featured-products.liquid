@@ -1,0 +1,99 @@
+<div class="container py-5">
+  <div class="featured-products-section-heading  px-md-2">SHOP FEATURED PRODUCTS</div>
+  <div class="row m-auto g-0 gy-3 g-md-3">
+    {% for product in section.settings.featured_products %}
+        <div class="featured-product-panel col-12 col-sm-6 col-lg-3">
+          <div class="featured-product-inner-panel position-relative">
+            <img class="featured-product-image" src="{{ product | image_url: width: 200 }}" />
+            <div class="featured-product-panel-footer">
+              <a href="{{ product.url }}" class="featured-product-title">{{ product.title }}</a>
+              <div class="featured-product-price">{{ product.price | money }}</div>
+              <a href="{{ product.url }}" class="add-to-cart stretched-link">View Product</a>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Products",
+    "settings": [
+      {
+        "type": "product_list",
+        "id": "featured_products",
+        "label": "Featured Products"
+      }
+    ],
+    "presets": [{
+      "name": "Featured Products"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .featured-products-section-heading {
+    font-size: 24px;
+    font-family: 'Poppins';
+    margin: 1.5rem auto;
+    color: black;
+  }
+  
+  .featured-product-inner-panel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .featured-product-panel .featured-product-inner-panel .featured-product-panel-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-product-panel .featured-product-inner-panel .featured-product-panel-footer .featured-product-title {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #121212;
+  }
+
+  .featured-product-panel .featured-product-inner-panel .featured-product-image {
+    place-self: center;
+    width: max-content;
+    overflow: hidden;
+  }
+
+  .featured-product-panel .featured-product-inner-panel .featured-product-panel-footer .featured-product-price {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Poppins';
+  }
+
+  .featured-product-panel .featured-product-inner-panel .featured-product-panel-footer .add-to-cart {
+    background-color: #553369;
+    color: #fff;
+    border-radius: 100px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0.75em;
+    font-weight: 700;
+    border: 0;
+    padding: 0.6rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    cursor: pointer;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

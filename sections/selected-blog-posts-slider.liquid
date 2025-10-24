@@ -1,0 +1,68 @@
+<div class="selected-blog-posts my-5 container">
+  <div class="fs-1 mb-4">{{ section.settings.selected_blog_posts_section_title }}</div>
+  
+  <div class="selected-blog-posts-inner">
+    <div class="swiper selected-blog-posts-slider h-100">
+      <div class="swiper-wrapper h-100">
+        {% for article in section.settings.blog.articles %}
+          <div class="selected-blog-post-item swiper-slide d-flex flex-column justify-content-end text-center position-relative">
+              <div class="pt-4 mb-4">{{ article.image | img_url: '500x400' | img_tag: article.image.alt }}</div>
+              <div class="p-5">
+                <div class="selected-blog-post-item-title fs-3 fw-bold article-item lh-sm mb-4">{{ article.title }}</div>
+                <div class="fs-3 lh-sm">{{ article.excerpt_or_content | strip_html | truncate: 100 }}</div>
+              </div>
+              <a href="{{ article.url }}" class="stretched-link d-block"></a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Blog Posts Slider",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "selected_blog_posts_section_title",
+        "label": "Selected Blog Posts Slider Section Title"
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Select A Blog"
+      }
+    ],
+    "presets": [{
+      "name": "Blog Posts Slider"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .collection-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const swiper = new Swiper('.selected-blog-posts-slider', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoHeight: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3
+      },
+      500: {
+        slidesPerView: 2
+      }
+    }
+  });
+{% endjavascript %}

@@ -1,0 +1,87 @@
+.pagination-wrapper {
+  .pagination {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.py-6 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.menu-drawer__submenu[id*=link-] {
+  background-color: #f2ecf5 !important;
+}
+
+.menu-drawer__submenu[id*=childlink-] > button {
+  color: white !important;
+}
+
+.menu-drawer__submenu[id*=childlink-] > .menu-drawer__menu > li > a {
+  color: white !important;
+}
+
+.menu-drawer__submenu[id*=childlink-] {
+  background-color: #553369 !important;
+}
+
+
+
+#shopify-section-header {
+  position: fixed;
+  z-index:1000;
+  left:0;
+  right:0;
+  /*-webkit-box-shadow:0px 2px 4px 0px rgba(0,0,0,.1);
+  -moz-box-shadow:0px 2px 4px 0px rgba(0,0,0,.1);
+  -ms-box-shadow:0px 2px 4px 0px rgba(0,0,0,.1);
+  -o-box-shadow:0px 2px 4px 0px rgba(0,0,0,.1);
+  box-shadow:0px 2px 4px 0px rgba(0,0,0,.1);*/.
+  background-color: {{ settings.color_body_bg }};
+  top:38px;z-index:100!important
+}
+.usp-section {position:fixed;left:0;right:0;width:100%;z-index:99!important;top:142px;}
+.USP-swiper {display:none;}
+#shopify-section-announcement-bar {position:fixed;top:0;width:100%;z-index:1010!important;}
+
+#MainContent {	margin-top: 196px;
+}
+#PageContainer {
+  padding-top: 80px;
+}
+@media screen and (max-width: 699px) 
+{
+/* ANIMATED SCROLL ANNOUNCEMNET */
+#scroll-container {border: 3px solid black;border-radius: 5px;overflow: hidden;}
+.announcement p {-moz-transform: translateX(100%);-webkit-transform: translateX(100%);transform: translateX(100%);-moz-animation: my-animation 25s linear infinite;-webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;}
+  
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(20%); }
+  to { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes my-animation {
+  from {-webkit-transform: translateX(20%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.USP-swiper {display:block;position:absolute;left:5px;top:5px;z-index:5000;}
+#PageContainer {padding-top:70px;}
+.usp-section {top:120px;}
+#MainContent {	margin-top: 175px;}
+}
+
+#dummy-chat-button-iframe {z-index:10!important;}

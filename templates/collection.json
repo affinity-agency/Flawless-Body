@@ -1,0 +1,244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "17611270304e513043": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_67c854e_Y6mYrC": {
+          "type": "ai_gen_block_67c854e",
+          "settings": {
+            "container_width": 1600,
+            "padding_top": 24,
+            "padding_bottom": 16,
+            "font_family": "poppins_n4",
+            "font_size": 14,
+            "spacing": 8,
+            "show_home_icon": true,
+            "home_text": "Home",
+            "separator": "/",
+            "background_color": "#ffffff",
+            "link_color": "#121212",
+            "link_hover_color": "#553369",
+            "current_color": "#553369",
+            "separator_color": "#999999"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_67c854e_Y6mYrC"
+      ],
+      "settings": {}
+    },
+    "4be7159e-1d88-46df-b16f-ffea23a0b51a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15549037740172__4be7159e-1d88-46df-b16f-ffea23a0b51a-1674054618813c1ed1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--15549037740172__4be7159e-1d88-46df-b16f-ffea23a0b51a-1674054618813c1ed1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.description | metafield_tag }}</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15549037740172__4be7159e-1d88-46df-b16f-ffea23a0b51a-1674054618813c1ed1-0",
+        "template--15549037740172__4be7159e-1d88-46df-b16f-ffea23a0b51a-1674054618813c1ed1-1"
+      ],
+      "settings": {
+        "image": "{{ collection.image }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "166125664426f5828b": {
+      "type": "image-banner",
+      "blocks": {
+        "166125664436e9f00c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h2"
+          }
+        },
+        "166125664436e9f00c-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "166125664436e9f00c-0",
+        "166125664436e9f00c-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "{{ collection.image }}",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "26c1b5ce-60d6-4fce-8b09-ef5477469eda": {
+      "type": "collections-slider",
+      "settings": {
+        "collection_section_title": "",
+        "collection_list": [
+          "featured-products"
+        ]
+      }
+    },
+    "685d6691-e42a-42cb-9051-84b1168ffc79": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestsellers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-2"
+      }
+    },
+    "collection-faq": {
+      "type": "collection-faq",
+      "settings": {
+        "heading": "Frequently asked questions",
+        "color_scheme": "background-1"
+      }
+    },
+    "d871878f-6763-45be-ae4c-78c4a5493580": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15549037740172__d871878f-6763-45be-ae4c-78c4a5493580-16819035111826f014-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO HEAR  ABOUT OUR LATEST NEWS & OFFERS",
+            "heading_size": "h2"
+          }
+        },
+        "template--15549037740172__d871878f-6763-45be-ae4c-78c4a5493580-16819035111826f014-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--15549037740172__d871878f-6763-45be-ae4c-78c4a5493580-16819035111826f014-0",
+        "template--15549037740172__d871878f-6763-45be-ae4c-78c4a5493580-16819035111826f014-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "8b1dde7c-9744-4eba-9044-70b3a624ad20": {
+      "type": "usp",
+      "custom_css": [
+        "a {text-decoration: none; display: inline-block; color: #553369;}",
+        "a div {float: right; padding-left: 10px;}"
+      ],
+      "settings": {
+        "first-usp-text": "FREE DELIVERY OVER £30/€100",
+        "first-usp-icon": "shopify://shop_images/icon_delivery.png",
+        "first-usp-url": "https://flawlessbody-shop.myshopify.com/pages/delivery-info",
+        "second-usp-text": "EST. AESTHETIC SKIN CLINIC SINCE 06",
+        "second-usp-icon": "shopify://shop_images/icon_established.png",
+        "second-usp-url": "https://www.flawlessbodyclinic.co.uk",
+        "third-usp-text": "OFFICIAL STOCKISTS OF ALL BRANDS",
+        "third-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "third-usp-url": "https://flawlessbody.co.uk/collections/skinceuticals",
+        "fourth-usp-text": "5 STAR REVIEWS ON REVIEW.IO",
+        "fourth-usp-icon": "shopify://shop_images/icon_reviews.png",
+        "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
+      }
+    }
+  },
+  "order": [
+    "17611270304e513043",
+    "4be7159e-1d88-46df-b16f-ffea23a0b51a",
+    "166125664426f5828b",
+    "product-grid",
+    "26c1b5ce-60d6-4fce-8b09-ef5477469eda",
+    "685d6691-e42a-42cb-9051-84b1168ffc79",
+    "banner",
+    "collection-faq",
+    "d871878f-6763-45be-ae4c-78c4a5493580",
+    "8b1dde7c-9744-4eba-9044-70b3a624ad20"
+  ]
+}

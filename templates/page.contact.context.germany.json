@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.contact.json",
+  "context": {
+    "market": "germany"
+  },
+  "sections": {
+    "main": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "image_banner_YzAeH": {
+      "type": "image-banner",
+      "disabled": false,
+      "custom_css": [
+        ".banner {max-height:500px}",
+        ".banner__media img {max-width:700px;margin:0 auto;height:inherit;left:10%;right:10%;max-height:500px;}",
+        ".banner__media{background:#ffffff!important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Neeta.webp",
+        "image_2": null,
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "header-d615a3b1cee5c7e8601667d0c52669af": null,
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "rich_text_93JFM": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "header-ba65eda104564b7351a3928d3e3174ce": null,
+        "padding_top": 40,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "heading_JKiwV": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "heading": "<p>Contact Flawless Body</p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JKiwV"
+      ]
+    },
+    "rich_text_igfKE": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "header-ba65eda104564b7351a3928d3e3174ce": null,
+        "padding_top": 40,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "text_4a7ey": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "text": "<p>We are here to help. It's as simple as that. If you need to get in contact please fill in the form below, email us at <a href=\"mailto:hello@flawlessbody.com\" title=\"mailto:hello@flawlessbody.com\">hello@flawlessbody.com</a> or visit us at our clinic for all skincare advice. </p><p>We aim to reply to emails/contact forms within one working day. Our average response time is less than 6 hours.</p><p><strong>Flawless Body</strong></p><p>Unit 1 Southview Business Park</p><p>Tinwell Road</p><p>Stamford</p><p>Lincolnshire</p><p>PE9 2JL</p><p>UK</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4a7ey"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_93JFM",
+    "image_banner_YzAeH",
+    "rich_text_igfKE",
+    "form"
+  ]
+}

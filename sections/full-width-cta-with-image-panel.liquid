@@ -1,0 +1,96 @@
+<div class="full-width-panel-cta" style="background-image: url({{ section.settings.background_image | image_url: width: 1900, height: 550 }});">
+  <div class="container py-5 py-xl-0">
+    <div class="row px-5 {{ section.settings.text_alignment }}">
+      <div class="col-12 col-xl-6 d-flex flex-column pt-5 justify-content-center">
+        <div class="fs-1">{{ section.settings.title }}</div>
+        <div class="fs-3 my-4">{{ section.settings.description }}</div>
+        <div>
+          <a class="border border-dark btn btn-lg fs-3 px-4 py-3 rounded-0" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 my-5 my-xl-0">
+        <div class="text-center img-fluid pt-5">{{ section.settings.side_image | img_url: '800x500' | img_tag: section.settings.side_image.alt }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Full Width CTA W/ Panel",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "CTA Panel Title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "CTA Panel Description"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "CTA Button Text"
+      },
+      {
+        "type": "text",
+        "id": "button_url",
+        "label": "CTA Button URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "side_image",
+        "label": "Image to display on the side"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+      {
+        "type": "radio",
+        "id": "text_alignment",
+        "label": "Text side alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      }
+    ],
+    "presets": [{
+      "name": "Full Width CTA W/ Panel"
+    }]
+  }
+{% endschema %}
+  
+  
+{% stylesheet %}
+  .full-width-panel-cta {
+    background-repeat: repeat; 
+    background-size: initial;
+  }
+
+  @media (min-width: 1200px) {
+    .full-width-panel-cta {
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }  
+  }
+  
+  .full-width-panel-cta .img-fluid img {
+    height: auto;
+    max-width: 100%;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

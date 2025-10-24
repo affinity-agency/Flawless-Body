@@ -1,0 +1,117 @@
+<div class="blog-articles-section my-5" style="background-image: url({{ section.settings.blog-articles-section-background | image_url: width: 1900 }})">
+  <div class="blog-articles-inner container">
+    <div class="row">
+      <div class="blog-articles-info col-3">
+        <div class="blog-articles-title">Tips & Advice</div>
+        <div class="blog-articles-description">Our mission is to improve skin health. We are committed to leading the skincare industry in terms of research and innovaion, and we promise to provide advanced skincare backed by science.</div>
+        <a class="blog-articles-url" href="/blogs/understanding-skin">View All</a>
+      </div>
+  
+      <div class="col-9">
+        <div class="swiper blog-articles-slider h-100">
+          <div class="swiper-wrapper h-100">
+            {% for article in blogs.understanding-skin.articles limit:15 %}
+              <div class="swiper-slide h-100 d-flex">
+                <div class="p-5 bg-white">
+                  <div class="blog-article h-100">
+                    <div class="blog-title">{{ article.title }}</div>
+                    <div class="blog-content">{{ article.content | truncate: 200 }}...</div>
+                    <a class="blog-url" href="{{ article.url }}">Read More</a>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Blog Articles Slider",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "blog-articles-section-background",
+        "label": "Blog Articles Section Background Image"
+      }
+    ],
+    "presets": [{
+      "name": "Blog Articles Slider"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .blog-articles-section {
+    padding: 3rem;
+  }
+
+  .blog-articles-info {
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-articles-title {
+    font-size: 24px;
+    color: #553369;
+    font-family: 'Poppins';
+    margin-bottom: 1rem;
+  }
+
+  .blog-articles-description {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    color: #121212bf;
+  }
+
+  .blog-articles-url {
+    background-color: #553369;
+    color: white;
+    border-radius: 100px;
+    padding: 0.75rem 3rem;
+    width: max-content;
+    margin-top: auto;
+    text-decoration: none;
+  }
+
+  .blog-articles-slider .blog-article {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .blog-article .blog-content {
+    white-space: pre-wrap;
+    font-size: 12px;
+    color: #121212bf;
+    margin-bottom: 2rem;
+  }
+
+  .blog-article .blog-title {
+    white-space: pre-wrap;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 2rem;
+  }
+
+  .blog-article .blog-url {
+    border: 1px solid #553369;
+    color: #553369;
+    border-radius: 100px;
+    padding: 0.75rem 3rem;
+    width: max-content;
+    margin-top: auto;
+    text-decoration: none;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const swiper = new Swiper('.blog-articles-slider', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    autoHeight: true
+  });
+{% endjavascript %}

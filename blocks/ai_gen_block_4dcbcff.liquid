@@ -1,0 +1,356 @@
+{% doc %}
+  @prompt
+    breadcrumb trail with the previous page in the journey linked in the trail
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-breadcrumb-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-breadcrumb-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-breadcrumb-list-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: {{ block.settings.item_spacing }}px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: {{ block.settings.font_size }}px;
+  }
+
+  .ai-breadcrumb-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.item_spacing }}px;
+  }
+
+  .ai-breadcrumb-link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ai-breadcrumb-link-{{ ai_gen_id }}:hover {
+    color: {{ block.settings.link_hover_color }};
+    text-decoration: underline;
+  }
+
+  .ai-breadcrumb-separator-{{ ai_gen_id }} {
+    color: {{ block.settings.separator_color }};
+    user-select: none;
+  }
+
+  .ai-breadcrumb-current-{{ ai_gen_id }} {
+    color: {{ block.settings.current_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-breadcrumb-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top | times: 0.7 }}px 0 {{ block.settings.padding_bottom | times: 0.7 }}px;
+    }
+
+    .ai-breadcrumb-list-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<breadcrumb-trail-{{ ai_gen_id }} class="ai-breadcrumb-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-breadcrumb-container-{{ ai_gen_id }}">
+    <nav aria-label="Breadcrumb">
+      <ol class="ai-breadcrumb-list-{{ ai_gen_id }}">
+        <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+          <a href="/" class="ai-breadcrumb-link-{{ ai_gen_id }}">
+            {% if block.settings.show_home_icon %}
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2 6L8 1L14 6V13C14 13.5304 13.7893 14.0391 13.4142 14.4142C13.0391 14.7893 12.5304 15 12 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 15V8H10V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            {% else %}
+              {{ block.settings.home_text }}
+            {% endif %}
+          </a>
+        </li>
+
+        {% if request.page_type == 'collection' and collection %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ collection.title }}</span>
+          </li>
+
+        {% elsif request.page_type == 'product' and product %}
+          {% if collection %}
+            <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+              <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+              <a href="{{ collection.url }}" class="ai-breadcrumb-link-{{ ai_gen_id }}">{{ collection.title }}</a>
+            </li>
+          {% elsif product.collections.size > 0 %}
+            <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+              <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+              <a href="{{ product.collections.first.url }}" class="ai-breadcrumb-link-{{ ai_gen_id }}">{{ product.collections.first.title }}</a>
+            </li>
+          {% endif %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ product.title }}</span>
+          </li>
+
+        {% elsif request.page_type == 'article' and article %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <a href="{{ blog.url }}" class="ai-breadcrumb-link-{{ ai_gen_id }}">{{ blog.title }}</a>
+          </li>
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ article.title }}</span>
+          </li>
+
+        {% elsif request.page_type == 'blog' and blog %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ blog.title }}</span>
+          </li>
+
+        {% elsif request.page_type == 'page' and page %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ page.title }}</span>
+          </li>
+
+        {% elsif request.page_type == 'search' %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ block.settings.search_text }}</span>
+          </li>
+
+        {% elsif request.page_type == 'cart' %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ block.settings.cart_text }}</span>
+          </li>
+
+        {% elsif request.page_type == 'account' %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ block.settings.account_text }}</span>
+          </li>
+
+        {% elsif request.page_type == '404' %}
+          <li class="ai-breadcrumb-item-{{ ai_gen_id }}">
+            <span class="ai-breadcrumb-separator-{{ ai_gen_id }}" aria-hidden="true">{{ block.settings.separator }}</span>
+            <span class="ai-breadcrumb-current-{{ ai_gen_id }}">{{ block.settings.not_found_text }}</span>
+          </li>
+        {% endif %}
+      </ol>
+    </nav>
+  </div>
+</breadcrumb-trail-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BreadcrumbTrail{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupStructuredData();
+      }
+
+      setupStructuredData() {
+        const items = this.querySelectorAll('.ai-breadcrumb-item-{{ ai_gen_id }}');
+        if (items.length === 0) return;
+
+        const structuredData = {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          'itemListElement': []
+        };
+
+        items.forEach((item, index) => {
+          const link = item.querySelector('.ai-breadcrumb-link-{{ ai_gen_id }}');
+          const current = item.querySelector('.ai-breadcrumb-current-{{ ai_gen_id }}');
+          
+          if (link) {
+            structuredData.itemListElement.push({
+              '@type': 'ListItem',
+              'position': index + 1,
+              'name': link.textContent.trim(),
+              'item': link.href
+            });
+          } else if (current) {
+            structuredData.itemListElement.push({
+              '@type': 'ListItem',
+              'position': index + 1,
+              'name': current.textContent.trim()
+            });
+          }
+        });
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(structuredData);
+        this.appendChild(script);
+      }
+    }
+
+    customElements.define('breadcrumb-trail-{{ ai_gen_id }}', BreadcrumbTrail{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Breadcrumb trail",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_home_icon",
+      "label": "Show home icon",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "home_text",
+      "label": "Home text",
+      "default": "Home"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Separator",
+      "default": "/"
+    },
+    {
+      "type": "text",
+      "id": "search_text",
+      "label": "Search text",
+      "default": "Search"
+    },
+    {
+      "type": "text",
+      "id": "cart_text",
+      "label": "Cart text",
+      "default": "Cart"
+    },
+    {
+      "type": "text",
+      "id": "account_text",
+      "label": "Account text",
+      "default": "Account"
+    },
+    {
+      "type": "text",
+      "id": "not_found_text",
+      "label": "404 text",
+      "default": "Page not found"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1600
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "min": 4,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Item spacing",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link",
+      "default": "#553369"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator",
+      "default": "#999999"
+    },
+    {
+      "type": "color",
+      "id": "current_color",
+      "label": "Current page",
+      "default": "#121212"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Breadcrumb trail"
+    }
+  ]
+}
+{% endschema %}

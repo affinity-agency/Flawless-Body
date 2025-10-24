@@ -1,0 +1,53 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "8532e45b-b90e-4695-86a4-42765f18743a": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15549038166156__8532e45b-b90e-4695-86a4-42765f18743a-16819035111826f014-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO HEAR ABOUT OUR LATEST NEWS & OFFERS",
+            "heading_size": "h2"
+          }
+        },
+        "template--15549038166156__8532e45b-b90e-4695-86a4-42765f18743a-16819035111826f014-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--15549038166156__8532e45b-b90e-4695-86a4-42765f18743a-16819035111826f014-0",
+        "template--15549038166156__8532e45b-b90e-4695-86a4-42765f18743a-16819035111826f014-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8532e45b-b90e-4695-86a4-42765f18743a"
+  ]
+}

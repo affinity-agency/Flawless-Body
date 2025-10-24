@@ -1,0 +1,375 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1761126979cb46158c": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "16609006403302aec6": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-f71b4f2e"
+      }
+    },
+    "d9ca3799-0b04-43c6-8cb2-e92a8b79c32c": {
+      "type": "usp",
+      "custom_css": [
+        "a {text-decoration: none; display: inline-block; color: #553369;}",
+        "a div {float: right; padding-left: 10px;}"
+      ],
+      "settings": {
+        "first-usp-text": "FREE DELIVERY OVER £30/€50",
+        "first-usp-icon": "shopify://shop_images/icon_delivery.png",
+        "first-usp-url": "https://flawlessbody-shop.myshopify.com/pages/delivery-info",
+        "second-usp-text": "EST. AESTHETIC SKIN CLINIC SINCE 06",
+        "second-usp-icon": "shopify://shop_images/icon_established.png",
+        "second-usp-url": "https://www.flawlessbodyclinic.co.uk",
+        "third-usp-text": "OFFICIAL STOCKISTS OF ALL BRANDS",
+        "third-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "third-usp-url": "https://flawlessbody.co.uk/collections/skinceuticals",
+        "fourth-usp-text": "5 STAR REVIEWS ON REVIEW.IO",
+        "fourth-usp-icon": "shopify://shop_images/icon_reviews.png",
+        "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
+      }
+    },
+    "1663320144a964ee9d": {
+      "type": "hero",
+      "custom_css": [],
+      "settings": {
+        "hero-heading": "THE POWER OF INTEGRATED SKINCARE",
+        "hero-subtitle": "<p></p><p>COMBINING AESTHETIC PROCEDURES WITH SKINCEUTICALS FOR OPTIMISED RESULTS</p>",
+        "hero-text": "<p>TREATMENT + HOMECARE = OPTIMISED RESULTS</p>",
+        "hero-button-url": "",
+        "hero-background": "shopify://shop_images/homepage_c1e8472c-8234-4f01-83a9-a05888c6dc2e.jpg",
+        "above-header-image": "shopify://shop_images/skinceuticals_authorized_retailer_logo.png",
+        "above-header-url": "/collections/skinceuticals",
+        "below-subtitle-image": "shopify://shop_images/fb_sc_official_partner_2x_1cb0edf9-fcbc-4056-a748-51c9a76de8c9.png",
+        "below-subtitle-url": "/collections/skinceuticals"
+      }
+    },
+    "166332543877683c38": {
+      "type": "category-panels",
+      "settings": {
+        "categories": [
+          "skincare",
+          "haircare",
+          "sun-protection",
+          "supplements"
+        ]
+      }
+    },
+    "166332976210870fc9": {
+      "type": "featured-products",
+      "settings": {
+        "featured_products": [
+          "ce-ferulic-30ml",
+          "skinade-30-day-course",
+          "ha-intensifier-30ml",
+          "triple-lipid-restore-2-4-2-48ml"
+        ]
+      }
+    },
+    "1663663532f6f3adfe": {
+      "type": "large-panel-and-mini-floating-panel",
+      "settings": {
+        "title": "ABOUT US",
+        "leading_paragraph": "<p>Flawless Body is situated in the lovely Georgian town of Stamford and is part of the Flawless Beauty Group which has been established since 2006.</p><p>As a well established Clinic we are <strong>authorised stockists</strong> of several <strong>leading skincare and haircare brands</strong>. </p><p>Flawless Body has become one of the leading online suppliers of Cosmeceutical products online.  As one of the leading suppliers in the industry we are able to provide <strong>GENUINE</strong> products at the best prices on the web.  With 1000's of independently verified views.</p>",
+        "description": "",
+        "button_text": "MORE ABOUT US",
+        "button_url": "https://flawlessbody-shop.myshopify.com/pages/about-us",
+        "floating_panel_text": "<p><strong>BODY CONFIDENCE</strong> - We want people to feel great about themselves and we think by helping people enhance the way they look and feel about their bodies goes some way to achieving this.</p><p><strong>BESPOKE SOLUTIONS FOR BESPOKE SKIN</strong> - Every BODY is different, therefore we want customers to be confident that we have selected the best brands and have the right advice to ensure that we provide advice that is bespoke for the individual.</p><p><strong>ALL THINGS TO ALL PEOPLE</strong> - Skincare has traditionally been seen as a female only zone. We are parting company with this thinking. We aim to cater our services and advice for men, women and transgender. We expect no one to feel uncomfortable in anyway when speaking to us.</p>"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "ADVANCED  PROFESSIONAL  SKINCARE",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "BACKED BY SCIENCE",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP THE RANGE",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/hero_main_desktop_2x_bbf7b065-6870-4b7e-8a54-abd680f092cd.png",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "423a557d-1499-4cbc-ad9b-714b33a1d7f1": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15549038133388__423a557d-1499-4cbc-ad9b-714b33a1d7f1-1673257202fdbdcded-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>BODY CONFIDENCE</strong> - We want people to feel great about themselves and we think by helping people enhance the way they look and feel about their bodies goes some way to achieving this.</p><p><strong>BESPOKE SOLUTIONS FOR BESPOKE BODIES</strong> - Every BODY is different, therefore we want customers to be confident that we have selected the best equipment, staff, and have the right advice to ensure that we provide a service that is bespoke for the individual.</p><p><strong>ALL THINGS TO ALL PEOPLE</strong> - Beauty establishments are generally seen as a female only zone. We are parting company with this thinking. We aim to cater our services for men, women and transgender. We have private treatment rooms and expect no one to feel uncomfortable in anyway.</p>",
+            "text_style": "body"
+          }
+        },
+        "template--15549038133388__423a557d-1499-4cbc-ad9b-714b33a1d7f1-1673257202fdbdcded-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "MORE ABOUT US",
+            "button_link": "shopify://pages/about-us"
+          }
+        }
+      },
+      "block_order": [
+        "template--15549038133388__423a557d-1499-4cbc-ad9b-714b33a1d7f1-1673257202fdbdcded-1",
+        "template--15549038133388__423a557d-1499-4cbc-ad9b-714b33a1d7f1-1673257202fdbdcded-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/huha-inc-Hp-3N5Gl1Ak-unsplash.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_VVyarE": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".color-background-1 {max-width: 90%; margin: 50px auto 0 auto;}",
+        "#trustpilot-widget-trustbox-0-wrapper {z-index: 1 !important; position: relative;}"
+      ],
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "bc0dee84-4314-45e6-b22f-6f46a254d379": {
+      "type": "reviews-carousel",
+      "disabled": true,
+      "settings": {}
+    },
+    "pagefly-home": {
+      "type": "pagefly-home",
+      "disabled": true,
+      "settings": {}
+    },
+    "1663341453bc6c79ff": {
+      "type": "blog-articles-slider",
+      "disabled": true,
+      "settings": {
+        "blog-articles-section-background": "shopify://shop_images/tipsbackground2x--edited-1663342805882.webp"
+      }
+    },
+    "1660925212f15a285a": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-e8891b3b"
+      }
+    },
+    "bb665874-3ed9-4e2c-b4e3-f7b13d391824": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15549038133388__bb665874-3ed9-4e2c-b4e3-f7b13d391824-16734573366b3ee944-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO HEAR  ABOUT OUR LATEST NEWS & OFFERS",
+            "heading_size": "h2"
+          }
+        },
+        "template--15549038133388__bb665874-3ed9-4e2c-b4e3-f7b13d391824-16734573366b3ee944-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--15549038133388__bb665874-3ed9-4e2c-b4e3-f7b13d391824-16734573366b3ee944-0",
+        "template--15549038133388__bb665874-3ed9-4e2c-b4e3-f7b13d391824-16734573366b3ee944-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1761126979cb46158c",
+    "16609006403302aec6",
+    "d9ca3799-0b04-43c6-8cb2-e92a8b79c32c",
+    "1663320144a964ee9d",
+    "166332543877683c38",
+    "166332976210870fc9",
+    "1663663532f6f3adfe",
+    "image_banner",
+    "rich_text",
+    "featured_collection",
+    "collage",
+    "video",
+    "423a557d-1499-4cbc-ad9b-714b33a1d7f1",
+    "custom_liquid_VVyarE",
+    "bc0dee84-4314-45e6-b22f-6f46a254d379",
+    "pagefly-home",
+    "1663341453bc6c79ff",
+    "1660925212f15a285a",
+    "bb665874-3ed9-4e2c-b4e3-f7b13d391824"
+  ]
+}

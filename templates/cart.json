@@ -1,0 +1,103 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1761131013ff4fb5c3": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4dcbcff_iPKUpg": {
+          "type": "ai_gen_block_4dcbcff",
+          "settings": {
+            "show_home_icon": true,
+            "home_text": "Home",
+            "separator": "/",
+            "search_text": "Search",
+            "cart_text": "Cart",
+            "account_text": "Account",
+            "not_found_text": "Page not found",
+            "container_width": 1600,
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "item_spacing": 8,
+            "font_size": 14,
+            "background_color": "#ffffff",
+            "link_color": "#553369",
+            "link_hover_color": "#121212",
+            "separator_color": "#999999",
+            "current_color": "#121212"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4dcbcff_iPKUpg"
+      ],
+      "settings": {}
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {}
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1761131013ff4fb5c3",
+    "cart-items",
+    "cart-footer",
+    "featured-collection"
+  ]
+}

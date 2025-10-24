@@ -1,0 +1,175 @@
+<div class="large-and-floating-panels-section container position-relative mx-auto row my-5">
+  <div
+    class="large-panel me-auto col-12 col-md-6 col-xxl-9 row g-0"
+    style="background-image: url(https://cdn.shopify.com/s/files/1/0604/8635/3036/t/6/assets/hp-experts-image2x-1660831914499.png?v=1660831928)"
+  >
+    <div class="large-panel-inner col-xxl-4">
+      <div class="lp-title">{{ section.settings.title }}</div>
+      <div class="lp-subtitle">{{ section.settings.leading_paragraph }}</div>
+      <div class="lp-text">{{ section.settings.description }}</div>
+      <a class="lp-button" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+  <div class="floating-panel col-12 col-md-6 h-auto">
+    <!--
+      <div class="fp-title">BODY CONFIDENCE</div>
+      <p class="fp-text">We want people to feel great about themselves and we think by helping people enhance the way they look and feel about their bodies goes some way to achieving this.</p>
+
+      <div class="fp-title">BODY CONFIDENCE</div>
+      <p class="fp-text">We want people to feel great about themselves and we think by helping people enhance the way they look and feel about their bodies goes some way to achieving this.</p>
+
+      <div class="fp-title">BODY CONFIDENCE</div>
+      <p class="fp-text">We want people to feel great about themselves and we think by helping people enhance the way they look and feel about their bodies goes some way to achieving this.</p>
+    -->
+    <div>
+      {{ section.settings.floating_panel_text }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Large & Floating Panels",
+  "tag": "section",
+  "class": "large-and-floating-panels-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "leading_paragraph",
+      "label": "Leading Paragraph"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Main Description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "text",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "floating_panel_text",
+      "label": "Floating Panel Text"
+    }
+  ],
+  "presets": [{
+    "name": "Large and Mini Floating Panels"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+  .large-and-floating-panels-section {
+    position: relative;
+    margin: auto;
+  }
+
+  .large-and-floating-panels-section p {
+    overflow-wrap: anywhere;
+  }
+
+  .large-and-floating-panels-section .large-panel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+  }
+  
+  @media (min-width: 767px) {
+    .large-and-floating-panels-section .large-panel {
+      padding: 4rem;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .large-and-floating-panels-section .large-panel {
+      padding: 8rem;
+    }
+  }
+
+  .large-and-floating-panels-section .large-panel-inner .lp-title {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .large-and-floating-panels-section .large-panel-inner .lp-subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+    color: #553369;
+    font-weight: 500;
+  }
+
+  .large-and-floating-panels-section .large-panel-inner .lp-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5;
+    margin: 1.25rem 0;
+  }
+
+  .large-and-floating-panels-section .large-panel-inner .lp-button {
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    padding: 0.75rem 3rem;
+    width: max-content;
+    font-size: 18px;
+    display: block;
+    margin-top: 3rem;
+    text-decoration: none;
+  }
+
+  @media (min-width: 1400px) {
+    .floating-panel {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  .floating-panel {
+    background: #553369;
+    color: #fff;
+    padding: 3rem;
+    height: min-content;
+  }
+
+  @media (min-width: 767px) {
+    .floating-panel {
+      padding: 4rem;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .floating-panel {
+      padding: 5rem;
+    }
+  }
+
+  .floating-panel .fp-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .floating-panel .fp-text {
+    font-size: 12px;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

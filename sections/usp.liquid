@@ -1,0 +1,138 @@
+<div class="usp-section py-4">
+  <div class="container">
+    <div class="swiper usp-swiper">
+        <img src="https://cdn.shopify.com/s/files/1/0604/8635/3036/files/swipe.png?v=1683296144" class="USP-swiper" width="24" height="24" />
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide position-relative h-100">
+          <div class="d-flex gap-4 h-100 align-items-center fs-5 justify-content-center">
+            <a href="{{ section.settings.first-usp-url }}">
+              <img src="{{ section.settings.first-usp-icon | image_url: width: auto, height: 25 }}" class="h-100">
+            <div>{{ section.settings.first-usp-text }}</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide position-relative h-100">
+          <div class="d-flex gap-4 h-100 align-items-center fs-5 justify-content-center">
+            <a href="{{ section.settings.second-usp-url }}">
+              <img src="{{ section.settings.second-usp-icon | image_url: width: auto, height: 25 }}" class="h-100">
+            <div>{{ section.settings.second-usp-text }}</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide position-relative h-100">
+          <div class="d-flex gap-4 h-100 align-items-center fs-5 justify-content-center">
+            <a href="{{ section.settings.third-usp-url }}">
+              <img src="{{ section.settings.third-usp-icon | image_url: width: auto, height: 25 }}" class="h-100">
+            <div>{{ section.settings.third-usp-text }}</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide position-relative h-100">
+          <div class="d-flex gap-4 h-100 align-items-center fs-5 justify-content-center">
+            <a href="{{ section.settings.fourth-usp-url }}">
+              <img src="{{ section.settings.fourth-usp-icon | image_url: width: auto, height: 25 }}" class="h-100">
+            <div>{{ section.settings.fourth-usp-text }}</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "USP Section",
+    "tag": "section",
+    "class": "usp-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "first-usp-text",
+        "label": "First USP Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "first-usp-icon",
+        "label": "First USP Icon"
+      },
+      {
+        "type": "text",
+        "id": "first-usp-url",
+        "label": "First USP URL"
+      },
+      {
+        "type": "text",
+        "id": "second-usp-text",
+        "label": "Second USP Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "second-usp-icon",
+        "label": "Second USP Icon"
+      },
+      {
+        "type": "text",
+        "id": "second-usp-url",
+        "label": "Second USP URL"
+      },
+      {
+        "type": "text",
+        "id": "third-usp-text",
+        "label": "Third USP Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "third-usp-icon",
+        "label": "Third USP Icon"
+      },
+      {
+        "type": "text",
+        "id": "third-usp-url",
+        "label": "Third USP URL"
+      },
+      {
+        "type": "text",
+        "id": "fourth-usp-text",
+        "label": "Fourth USP Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "fourth-usp-icon",
+        "label": "Fourth USP Icon"
+      },
+      {
+        "type": "text",
+        "id": "fourth-usp-url",
+        "label": "Fourth USP URL"
+      }
+    ],
+    "presets": [{
+      "name": "USP Section"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .usp-section {
+    background-color: #f2ecf5;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const swiper = new Swiper('.usp-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 10
+      }
+    }
+  });
+{% endjavascript %}

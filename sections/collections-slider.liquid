@@ -1,0 +1,126 @@
+<div class="collection-section my-5 container">
+  <div class="fs-1 mb-4">{{ section.settings.collection_section_title }}</div>
+  
+  <div class="collection-inner">
+    <div class="d-flex position-relative h-100">
+      <div class="collection-slider-nav prev "><span></span></div>
+
+      <div class="swiper collection-slider h-100">
+        <div class="swiper-wrapper h-100">
+          {% for collection in section.settings.collection_list %}
+            <div class="collection-item swiper-slide d-flex flex-column justify-content-end position-relative" style="background-image: url({{ collection.image | image_url: width: 300, height: 450 }}); height: 450px">
+              <div class="p-4 ms-xl-5 text-start collection-item-bg" style="background-color: #027299;">
+                <div class="collection-item-title fs-3 fs-xl-2 fw-bold collection-item text-white lh-sm mb-2">
+                  <a href="{{ collection.url }}" class="stretched-link text-decoration-none text-light">   
+                    {{ collection.title }}
+                  </a>
+                </div>
+                <div class="fs-3 collection-item text-white lh-sm">{{ collection.description | strip_html | truncate: 30 }}</div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+  
+        <div class="collection-swiper-button-prev"></div>
+        <div class="collection-swiper-button-next"></div>
+      </div>
+      
+      <div class="collection-slider-nav next "><span></span></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection Slider",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "collection_section_title",
+        "label": "Collection Slider Section Title"
+      },
+      {
+        "type": "collection_list",
+        "id": "collection_list",
+        "label": "Collections",
+        "limit": 12
+      }
+    ],
+    "presets": [{
+      "name": "Collection Slider"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .collection-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .collection-slider-nav {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .collection-slider-nav {
+      width: 40px;
+      min-width: 40px;
+      z-index: 10;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      place-content: center;
+      display: flex !important;
+    }
+  }
+
+  .collection-slider-nav.next span::after {
+    content: "\276F";
+    display: block;
+    font-size: 24px;
+    color: #027299;
+  }
+
+  .collection-slider-nav.prev span::after {
+    content: "\276E";
+    display: block;
+    font-size: 24px;
+    color: #027299;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  const swiper = new Swiper('.collection-slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoHeight: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 5
+      },
+      767: {
+        slidesPerView: 3
+      },
+      500: {
+        slidesPerView: 2
+      }
+    },
+    navigation: {
+      nextEl: '.collection-swiper-button-next',
+      prevEl: '.collection-swiper-button-prev',
+    }
+  });
+
+  document.querySelector('.collection-slider-nav.next').addEventListener('click', function () {
+    document.querySelector('.collection-swiper-button-next').click();
+  });
+
+  document.querySelector('.collection-slider-nav.prev').addEventListener('click', function () {
+    document.querySelector('.collection-swiper-button-prev').click();
+  });
+{% endjavascript %}
