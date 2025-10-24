@@ -263,7 +263,27 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 </script>
   <meta name="google-site-verification" content="AEHy8pc5e6DYtB6yAioxOS9pWb2hBFB43cz2NNkVLvA" />
                      {% capture adoricsnippet %}{% include "adoric-apps-common" %}{% endcapture %}{% unless adoricsnippet contains "Liquid error" %}{{ adoricsnippet }}{% endunless %}
- {% include 'pagefly-app-header' %}</head>
+ 
+
+
+    
+  <!-- BEGIN MerchantWidget Code -->
+<script id='merchantWidgetScript'
+        src="https://www.gstatic.com/shopping/merchant/merchantwidget.js"
+        defer>
+</script>
+<script type="text/javascript">
+  merchantWidgetScript.addEventListener('load', function () {
+    merchantwidget.start({
+     position: 'LEFT_BOTTOM'
+   });
+  });
+</script>
+<!-- END MerchantWidget Code -->
+
+
+    
+  {% include 'pagefly-app-header' %}</head>
              
 
   <body class="gradient"><div class="pagefly-container">
