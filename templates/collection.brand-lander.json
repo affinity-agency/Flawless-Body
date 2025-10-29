@@ -52,8 +52,46 @@
         "below-subtitle-url": ""
       }
     },
+    "image_banner_MCxmDB": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_QMzAyj": {
+          "type": "heading",
+          "settings": {
+            "heading": "SKINCEUTICALS",
+            "heading_size": "h1"
+          }
+        },
+        "text_PUcM78": {
+          "type": "text",
+          "settings": {
+            "text": "THE POWER OF INTEGRATED SKINCARE",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QMzAyj",
+        "text_PUcM78"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/skinceuticals.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5": {
       "type": "collections-slider",
+      "disabled": true,
       "settings": {
         "collection_section_title": "<p>SHOP BY <strong>SKINCARE</strong></p>",
         "collection_list": [
@@ -69,6 +107,7 @@
     },
     "04f72a33-108f-4aca-892d-e5bd6565806b": {
       "type": "best-sellers-slider",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "product_list": [
@@ -118,6 +157,7 @@
     },
     "fbc03d75-1318-43a3-b3ae-4549b8be7cf5": {
       "type": "full-width-cta-with-image-panel",
+      "disabled": true,
       "settings": {
         "title": "<p><strong>ADVANCED PROFESSIONAL SKINCARE</strong></p>",
         "description": "<p>At SkinCeuticals, their mission is to improve skin health. They are committed to leading the skin-care industry in terms of scientific research and innovation, and promise to provide advanced skincare backed by science that will lead to healthy skin.</p><p>Their skin care philosophy centres around three fundamental principles: Prevent. Correct. Protect. These principles work synergistically to provide healthier looking skin, in an optimal anti-ageing skincare programme suitable for all skin types.</p><p><strong>Flawless Body</strong> is one of their chosen few authorised online retailers.  You can be rest assured that when you purchase SkinCeuticals products from us, you will be getting <strong>GENUINE</strong> product at fantastic prices.  Things to check if the retailer and product is genuine include:</p><ul><li><strong>Can you buy the whole range?</strong></li><li><strong>Do they supply samples?</strong></li><li><strong>Can you find them listed on skinceuticals.co.uk as an authorised retailer?</strong></li></ul>",
@@ -143,6 +183,7 @@
     },
     "d74b1bd4-1e01-4861-b57b-d64f6ecf511a": {
       "type": "selected-blog-posts-slider",
+      "disabled": true,
       "settings": {
         "selected_blog_posts_section_title": "<p>THE SCIENCE BEHIND <strong>SKINCEUTICALS</strong></p>",
         "blog": "science-behind-skinceuticals"
@@ -171,6 +212,7 @@
     },
     "a68f2a93-4915-493b-be0a-5caa47defb19": {
       "type": "Regime-builder",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "<p>BUILD <strong>YOUR REGIMEN</strong></p>",
@@ -204,6 +246,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -258,6 +301,7 @@
     "1660934035135e8f6f",
     "usp_j9apyC",
     "4f465d0e-0685-4f71-8990-f13df3c64f8f",
+    "image_banner_MCxmDB",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
     "77e34945-0a92-492f-bbf8-a864c27a0958",
