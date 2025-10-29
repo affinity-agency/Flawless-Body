@@ -186,7 +186,7 @@
         "column_TU8tDg": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_63.png",
+            "image": "shopify://shop_images/skinade.png",
             "title": "SKINADE",
             "text": "",
             "link_label": "SHOP RANGE",
@@ -196,7 +196,7 @@
         "column_NWNX99": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_64.png",
+            "image": "shopify://shop_images/is_clinical.png",
             "title": "IS CLINICAL",
             "text": "",
             "link_label": "SHOP RANGE",
@@ -206,7 +206,7 @@
         "column_JAdTMW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_66.png",
+            "image": "shopify://shop_images/kerastase.png",
             "title": "KERASTASE",
             "text": "",
             "link_label": "SHOP RANGE",
@@ -216,7 +216,7 @@
         "column_DkGQep": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_67.png",
+            "image": "shopify://shop_images/cerave.png",
             "title": "CERAVE",
             "text": "",
             "link_label": "SHOP RANGE",
@@ -239,7 +239,7 @@
         "title": "",
         "heading_size": "h2",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
@@ -339,7 +339,7 @@
     "1663663532f6f3adfe": {
       "type": "large-panel-and-mini-floating-panel",
       "custom_css": [
-        ".large-and-floating-panels-section{margin-top: 80px;}"
+        ".large-and-floating-panels-section {margin-top: 80px;}"
       ],
       "settings": {
         "title": "ABOUT US",
