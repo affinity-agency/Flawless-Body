@@ -94,6 +94,52 @@
         "show_text_below": true
       }
     },
+    "multicolumn_yjqggt": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wTJhBd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_80.png",
+            "title": "SKINCEUTICALS",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/skinceuticals-bestsellers"
+          }
+        },
+        "column_xR4KjT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_81.png",
+            "title": "MEDIK8",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/medik8"
+          }
+        }
+      },
+      "block_order": [
+        "column_wTJhBd",
+        "column_xR4KjT"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
     "rich_text_WJPPUt": {
       "type": "rich-text",
       "blocks": {
@@ -351,6 +397,7 @@
     "usp_j9apyC",
     "4f465d0e-0685-4f71-8990-f13df3c64f8f",
     "image_banner_MCxmDB",
+    "multicolumn_yjqggt",
     "rich_text_WJPPUt",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
