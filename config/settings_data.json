@@ -122,9 +122,8 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Spring Sale Up to 25% off all of these brands: Medik8, Olaplex, Kerastase & Revitalash",
+              "text": "Autumn Sale - Up to 40% OFF",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -248,18 +247,17 @@
       "BJC-Announce": {
         "type": "BJC-Announce",
         "custom_css": [
-          ".announcement p a {color: #f5f5f5 !important;}",
           "@media screen and (max-width: 749px) {.announcement p {width: 1200px !important; }}"
         ],
         "settings": {
-          "announcement_visibility": true,
+          "announcement_visibility": false,
           "announcement_text": "<p><strong>AUTUMN SALE </strong>- Up to <strong>40% OFF</strong> all these brands: <a href=\"/collections/olaplex\" title=\"OLAPLEX\">OLAPLEX</a> | <a href=\"/collections/kerastase\" title=\"KERASTASE\">KERASTASE</a> | <a href=\"https://flawlessbody.co.uk/collections/skinceuticals-bestsellers\" title=\"https://flawlessbody.co.uk/collections/skinceuticals-bestsellers\">SKINCEUTICALS </a>| <a href=\"/collections/paul-mitchell-1\" title=\"PAUL MITCHELL\">PAUL MITCHELL </a>| <a href=\"/collections/color-wow\" title=\"Color Wow\">COLOR WOW </a>| <a href=\"/collections/obagi\" title=\"Obagi Skincare\">OBAGI </a>| <a href=\"/collections/loreal-professional\" title=\"L'Oréal Professional\">L'OREAL PROFESSIONAL</a><a href=\"/collections/medik8\" title=\"Medik8\"> </a>| <a href=\"/collections/redken\" title=\"Redken\">REDKEN</a></p>",
           "announcement_text_size": 16,
           "announcement_mobilewidth": 1000,
-          "announcement_text_color": "#f5f5f5",
-          "announcement_bg_color": "#553369",
-          "announcement_border_size": 4,
-          "announcement_border_color": "#553369",
+          "announcement_text_color": "#ffffff",
+          "announcement_bg_color": "#d80672",
+          "announcement_border_size": 0,
+          "announcement_border_color": "#d80672",
           "announcement_padding": 5,
           "announcement_text_align": "center"
         }
@@ -306,11 +304,6 @@
       },
       "4372474792694305445": {
         "type": "shopify://apps/also-bought-related-products/blocks/app-embed-block/b94b27b4-738d-4d92-9e60-43c22d1da3f2",
-        "disabled": false,
-        "settings": {}
-      },
-      "8218531531362863771": {
-        "type": "shopify://apps/kite-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
         "disabled": false,
         "settings": {}
       },
