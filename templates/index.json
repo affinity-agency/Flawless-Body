@@ -22,6 +22,7 @@
     },
     "d9ca3799-0b04-43c6-8cb2-e92a8b79c32c": {
       "type": "usp",
+      "disabled": true,
       "custom_css": [
         "a {text-decoration: none; display: inline-block; color: #553369;}",
         "a div {float: right; padding-left: 10px;}"
@@ -40,6 +41,46 @@
         "fourth-usp-icon": "shopify://shop_images/icon_reviews.png",
         "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
       }
+    },
+    "176173176580bca0b0": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8cf2ee1_qQNDXr": {
+          "type": "ai_gen_block_8cf2ee1",
+          "settings": {
+            "container_width": 1600,
+            "columns_desktop": 4,
+            "columns_tablet": 2,
+            "columns_mobile": "1",
+            "alignment": "center",
+            "column_gap": 30,
+            "icon_size": 30,
+            "icon_text_gap": 15,
+            "text_size": 13,
+            "text_color": "#553369",
+            "background_color": "#f2ecf5",
+            "padding_vertical": 15,
+            "padding_horizontal": 15,
+            "column_1_enabled": true,
+            "column_1_icon": "shopify://shop_images/Delivery.svg",
+            "column_1_text": "FREE DELIVERY OVER £25",
+            "column_2_enabled": true,
+            "column_2_icon": "shopify://shop_images/Established.svg",
+            "column_2_text": "EST. AESTHETIC SKIN CLINIC 2006",
+            "column_3_enabled": true,
+            "column_3_icon": "shopify://shop_images/Official_Stockist.svg",
+            "column_3_text": "OFFICIAL STOCKIST OF ALL BRANDS",
+            "column_4_enabled": true,
+            "column_4_icon": "shopify://shop_images/Trustpilot_Star.svg",
+            "column_4_text": "5 STAR REVIEWS ON TRUSTPILOT"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8cf2ee1_qQNDXr"
+      ],
+      "settings": {}
     },
     "1663320144a964ee9d": {
       "type": "hero",
@@ -355,6 +396,7 @@
     "1761126979cb46158c",
     "16609006403302aec6",
     "d9ca3799-0b04-43c6-8cb2-e92a8b79c32c",
+    "176173176580bca0b0",
     "1663320144a964ee9d",
     "166332543877683c38",
     "166332976210870fc9",
