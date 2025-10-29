@@ -94,6 +94,54 @@
         "show_text_below": true
       }
     },
+    "image_with_text_CYR7hq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Eyay9b": {
+          "type": "heading",
+          "settings": {
+            "heading": "SkinCeuticals Advannced Professional Skincare Range",
+            "heading_size": "h1"
+          }
+        },
+        "text_8wJCrb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At SkinCeuticals, their mission is to improve skin health. They are committed to leading the skin-care industry in terms of scientific <br/>research and innovation, and promise to provide advanced skincare backed by science that will lead to healthy skin.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_a8GF3q": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP THE FULL RANGE",
+            "button_link": "shopify://collections/skinceuticals-2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Eyay9b",
+        "text_8wJCrb",
+        "button_a8GF3q"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 400; color: #541c6d;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/NAU_1280x720_1.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_yjqggt": {
       "type": "multicolumn",
       "blocks": {
@@ -486,6 +534,7 @@
     "usp_j9apyC",
     "4f465d0e-0685-4f71-8990-f13df3c64f8f",
     "image_banner_MCxmDB",
+    "image_with_text_CYR7hq",
     "multicolumn_yjqggt",
     "multicolumn_pwJwNY",
     "rich_text_WJPPUt",
