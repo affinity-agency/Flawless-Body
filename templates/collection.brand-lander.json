@@ -38,21 +38,6 @@
         "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
       }
     },
-    "4f465d0e-0685-4f71-8990-f13df3c64f8f": {
-      "type": "hero",
-      "disabled": true,
-      "settings": {
-        "hero-heading": "SkinCeuticals",
-        "hero-subtitle": "<p><br/>THE POWER OF INTEGRATED SKINCARE</p><p>COMBINING AESTHETIC PROCEDURES WITH  SKINCEUTICALS FOR OPTIMISED RESULTS</p>",
-        "hero-text": "<p>TREATMENT + HOMECARE = OPTIMISED RESULTS</p>",
-        "hero-button-url": "",
-        "hero-background": "shopify://shop_images/SkinC.jpg",
-        "above-header-image": "shopify://shop_images/skinceuticalslogo-1659091960645.webp",
-        "above-header-url": "",
-        "below-subtitle-image": "shopify://shop_images/FBS---Offical.png",
-        "below-subtitle-url": ""
-      }
-    },
     "image_banner_MCxmDB": {
       "type": "image-banner",
       "blocks": {
@@ -306,8 +291,204 @@
         "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 72
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "multicolumn_4LCjx6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VzRxYE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/cleanse_tone.webp",
+            "title": "Cleanse + Tone",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/skinceuticals-sunscreens"
+          }
+        },
+        "column_X3J3w6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/correct.webp",
+            "title": "Correct",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/eye-lip-care-1"
+          }
+        },
+        "column_TDgXFX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/moisturise.webp",
+            "title": "MOISTURISE",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/skin-ceuticals-ageing-skin"
+          }
+        },
+        "column_DgzKHH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/prevent.webp",
+            "title": "PREVENT",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/dehydrated-skin"
+          }
+        },
+        "column_f9AVKH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/protect.webp",
+            "title": "PROTECT",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VzRxYE",
+        "column_X3J3w6",
+        "column_TDgXFX",
+        "column_DgzKHH",
+        "column_f9AVKH"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 24
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_xejUnT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hLMaBj": {
+          "type": "heading",
+          "settings": {
+            "heading": "SkinCeuticals Advannced Professional Skincare Range",
+            "heading_size": "h1"
+          }
+        },
+        "text_h6TBjx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At SkinCeuticals, their mission is to improve skin health. They are committed to leading the skin-care industry in terms of scientific <br/>research and innovation, and promise to provide advanced skincare backed by science that will lead to healthy skin.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_q7D3H6": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP THE FULL RANGE",
+            "button_link": "shopify://collections/skinceuticals-2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hLMaBj",
+        "text_h6TBjx",
+        "button_q7D3H6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/NAU_1280x720_1.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_JkefpE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_zp8Frg": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9Gp3bi": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7jztrX": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zp8Frg",
+        "column_9Gp3bi",
+        "column_7jztrX"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_WJPPUt": {
@@ -509,25 +690,6 @@
       "disabled": true,
       "settings": {}
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
-      "disabled": true,
-      "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": true,
-        "enable_quick_add": true,
-        "enable_filtering": true,
-        "filter_type": "vertical",
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "166093405232e52fe5": {
       "type": "pagefly-section",
       "disabled": true,
@@ -565,12 +727,15 @@
   "order": [
     "1660934035135e8f6f",
     "usp_j9apyC",
-    "4f465d0e-0685-4f71-8990-f13df3c64f8f",
     "image_banner_MCxmDB",
     "image_with_text_CYR7hq",
     "multicolumn_yjqggt",
     "multicolumn_pwJwNY",
     "featured_collection_ECzgaU",
+    "multicolumn_4LCjx6",
+    "product-grid",
+    "image_with_text_xejUnT",
+    "multicolumn_JkefpE",
     "rich_text_WJPPUt",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
@@ -582,7 +747,6 @@
     "a68f2a93-4915-493b-be0a-5caa47defb19",
     "banner",
     "pf-8659a710",
-    "product-grid",
     "166093405232e52fe5",
     "dce0f1b1-97c7-40fe-a09a-619be5cbb198"
   ]
