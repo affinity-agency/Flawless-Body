@@ -302,7 +302,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/cleanse_tone.webp",
-            "title": "Cleanse + Tone",
+            "title": "CLEANSE + TONE",
             "text": "",
             "link_label": "",
             "link": "shopify://collections/skinceuticals-sunscreens"
@@ -312,7 +312,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/correct.webp",
-            "title": "Correct",
+            "title": "CORRECT",
             "text": "",
             "link_label": "",
             "link": "shopify://collections/eye-lip-care-1"
@@ -355,6 +355,9 @@
         "column_TDgXFX",
         "column_DgzKHH",
         "column_f9AVKH"
+      ],
+      "custom_css": [
+        "h3 {letter-spacing: 5px; font-size: 13px; color: #848484; font-weight: 200;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
