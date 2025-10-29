@@ -302,6 +302,37 @@
         ]
       }
     },
+    "featured_collection_fmzUXi": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "POPULAR THIS WEEK...",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
     "1663663532f6f3adfe": {
       "type": "large-panel-and-mini-floating-panel",
       "settings": {
@@ -586,6 +617,7 @@
     "multicolumn_WwRVV7",
     "collage_7N3J3P",
     "166332976210870fc9",
+    "featured_collection_fmzUXi",
     "1663663532f6f3adfe",
     "image_banner",
     "rich_text",
