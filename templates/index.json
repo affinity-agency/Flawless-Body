@@ -338,6 +338,9 @@
     },
     "1663663532f6f3adfe": {
       "type": "large-panel-and-mini-floating-panel",
+      "custom_css": [
+        ".large-and-floating-panels-section{margin-top: 80px;}"
+      ],
       "settings": {
         "title": "ABOUT US",
         "leading_paragraph": "<p>Flawless Body is situated in the lovely Georgian town of Stamford and is part of the Flawless Beauty Group which has been established since 2006.</p><p>As a well established Clinic we are <strong>authorised stockists</strong> of several <strong>leading skincare and haircare brands</strong>. </p><p>Flawless Body has become one of the leading online suppliers of Cosmeceutical products online.  As one of the leading suppliers in the industry we are able to provide <strong>GENUINE</strong> products at the best prices on the web.  With 1000's of independently verified views.</p>",
