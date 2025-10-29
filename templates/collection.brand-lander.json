@@ -395,103 +395,77 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_xejUnT": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_hLMaBj": {
-          "type": "heading",
-          "settings": {
-            "heading": "SkinCeuticals Advannced Professional Skincare Range",
-            "heading_size": "h1"
-          }
-        },
-        "text_h6TBjx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At SkinCeuticals, their mission is to improve skin health. They are committed to leading the skin-care industry in terms of scientific <br/>research and innovation, and promise to provide advanced skincare backed by science that will lead to healthy skin.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_q7D3H6": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP THE FULL RANGE",
-            "button_link": "shopify://collections/skinceuticals-2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_hLMaBj",
-        "text_h6TBjx",
-        "button_q7D3H6"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/NAU_1280x720_1.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_JkefpE": {
+    "multicolumn_p4eKeM": {
       "type": "multicolumn",
       "blocks": {
-        "column_zp8Frg": {
+        "column_igfXih": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/bottle.png",
+            "title": "The Science...",
+            "text": "<p>Their skin care philosophy centres around three fundamental principles: Prevent. Correct. Protect. </p>",
+            "link_label": "The Science",
+            "link": "shopify://collections/skinceuticals-sunscreens"
           }
         },
-        "column_9Gp3bi": {
+        "column_xBwy3J": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/science.png",
+            "title": "Clinical Studies",
+            "text": "<p>SkinCeuticals discover, develop, and deliver innovative skincare products that help to improve the overall...</p>",
+            "link_label": "About Clinical Studies",
+            "link": "shopify://collections/eye-lip-care-1"
           }
         },
-        "column_7jztrX": {
+        "column_KiqHxe": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/dr.png",
+            "title": "SHELDON R. PINNELL, MD",
+            "text": "<p>As one of the most well respected doctors and skin scientists of our time, Dr. Sheldon Pinnell has won countless...</p>",
+            "link_label": "About Dr Sheldon",
+            "link": "shopify://collections/skin-ceuticals-ageing-skin"
+          }
+        },
+        "column_RAfkTX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/drips.png",
+            "title": "OUR CHARTERS",
+            "text": "<p>SkinCeuticals holds its research, formulations, clinical testing, and product quality to the highest...</p>",
+            "link_label": "View Charters",
+            "link": "shopify://collections/dehydrated-skin"
           }
         }
       },
       "block_order": [
-        "column_zp8Frg",
-        "column_9Gp3bi",
-        "column_7jztrX"
+        "column_igfXih",
+        "column_xBwy3J",
+        "column_KiqHxe",
+        "column_RAfkTX"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 600; color: #541c6d; margin-bottom: 0px; margin-top: -10px;}",
+        "p {line-height: 22px;}",
+        "img {border-radius: 10px;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
+        "title": "",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "background_style": "none",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "rich_text_WJPPUt": {
@@ -737,8 +711,7 @@
     "featured_collection_ECzgaU",
     "multicolumn_4LCjx6",
     "product-grid",
-    "image_with_text_xejUnT",
-    "multicolumn_JkefpE",
+    "multicolumn_p4eKeM",
     "rich_text_WJPPUt",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
