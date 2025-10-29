@@ -306,7 +306,8 @@
       "type": "featured-collection",
       "custom_css": [
         "h2 {font-weight: 400; color: #541c6d;}",
-        ".card {border-radius: 10px;}"
+        ".card {border-radius: 10px;}",
+        ".badge {background-color: #df3725;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
