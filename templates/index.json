@@ -165,6 +165,11 @@
         "column_WiaTwf",
         "column_fG6G7U"
       ],
+      "custom_css": [
+        "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}",
+        "h3 {font-weight: 600; color: #541c6d; margin-bottom: -20px;}",
+        "img {border-radius: 10px;}"
+      ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "SHOP BY CATEGORY",
