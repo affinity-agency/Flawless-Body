@@ -11,6 +11,7 @@
   "sections": {
     "1761126979cb46158c": {
       "type": "_blocks",
+      "custom_css": [],
       "settings": {}
     },
     "16609006403302aec6": {
@@ -22,23 +23,22 @@
     },
     "d9ca3799-0b04-43c6-8cb2-e92a8b79c32c": {
       "type": "usp",
-      "disabled": true,
       "custom_css": [
         "a {text-decoration: none; display: inline-block; color: #553369;}",
         "a div {float: right; padding-left: 10px;}"
       ],
       "settings": {
-        "first-usp-text": "FREE DELIVERY OVER £30/€50",
-        "first-usp-icon": "shopify://shop_images/icon_delivery.png",
+        "first-usp-text": "FREE DELIVERY OVER £25",
+        "first-usp-icon": "shopify://shop_images/Delivery.svg",
         "first-usp-url": "https://flawlessbody-shop.myshopify.com/pages/delivery-info",
         "second-usp-text": "EST. AESTHETIC SKIN CLINIC SINCE 06",
-        "second-usp-icon": "shopify://shop_images/icon_established.png",
+        "second-usp-icon": "shopify://shop_images/Established.svg",
         "second-usp-url": "https://www.flawlessbodyclinic.co.uk",
         "third-usp-text": "OFFICIAL STOCKISTS OF ALL BRANDS",
-        "third-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "third-usp-icon": "shopify://shop_images/Official_Stockist.svg",
         "third-usp-url": "https://flawlessbody.co.uk/collections/skinceuticals",
         "fourth-usp-text": "5 STAR REVIEWS ON REVIEW.IO",
-        "fourth-usp-icon": "shopify://shop_images/icon_reviews.png",
+        "fourth-usp-icon": "shopify://shop_images/Trustpilot_Star.svg",
         "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
       }
     },
@@ -80,6 +80,7 @@
       "block_order": [
         "ai_gen_block_8cf2ee1_qQNDXr"
       ],
+      "custom_css": [],
       "settings": {}
     },
     "1663320144a964ee9d": {
