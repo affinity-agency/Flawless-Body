@@ -84,6 +84,9 @@
       "block_order": [
         "slide_9XqPj7"
       ],
+      "custom_css": [
+        "h2 {line-height: 55px;}"
+      ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
