@@ -40,6 +40,7 @@
     },
     "4f465d0e-0685-4f71-8990-f13df3c64f8f": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "hero-heading": "SkinCeuticals",
         "hero-subtitle": "<p><br/>THE POWER OF INTEGRATED SKINCARE</p><p>COMBINING AESTHETIC PROCEDURES WITH  SKINCEUTICALS FOR OPTIMISED RESULTS</p>",
@@ -65,7 +66,7 @@
         "text_PUcM78": {
           "type": "text",
           "settings": {
-            "text": "THE POWER OF INTEGRATED SKINCARE",
+            "text": "THE POWER OF INTEGRATED SKINCARE -  Combining aesthetic procedures with  SkinCeuticals for optimised results",
             "text_style": "subtitle"
           }
         }
@@ -73,6 +74,10 @@
       "block_order": [
         "heading_QMzAyj",
         "text_PUcM78"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 400; color: #541c6d; margin-bottom: -5px;}",
+        ".banner__text {color: #393537; line-height: 24px;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -87,6 +92,50 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "rich_text_WJPPUt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4q67rM": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>SkinCeuticals</strong> mission is to improve skin health. </p>",
+            "heading_size": "h2"
+          }
+        },
+        "text_eVRLXV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>They are committed to leading the skincare industry in terms of research and innovation, and promise to provide advanced skincare backed by science.</p>"
+          }
+        },
+        "button_NHn9E3": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP FULL RANGE",
+            "button_link": "shopify://collections/skinceuticals",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4q67rM",
+        "text_eVRLXV",
+        "button_NHn9E3"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5": {
@@ -302,6 +351,7 @@
     "usp_j9apyC",
     "4f465d0e-0685-4f71-8990-f13df3c64f8f",
     "image_banner_MCxmDB",
+    "rich_text_WJPPUt",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
     "77e34945-0a92-492f-bbf8-a864c27a0958",
