@@ -135,71 +135,27 @@
         "column_7AwLni": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_62.png",
+            "image": "shopify://shop_images/Mask_Group_80.png",
             "title": "SKINCEUTICALS",
             "text": "",
             "link_label": "SHOP RANGE",
             "link": "shopify://collections/skinceuticals-bestsellers"
-          }
-        },
-        "column_7i7aFz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Mask_Group_63.png",
-            "title": "SKINADE",
-            "text": "",
-            "link_label": "SHOP RANGE",
-            "link": "shopify://collections/skinade"
-          }
-        },
-        "column_WDiBjh": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Mask_Group_64.png",
-            "title": "IS CLINICAL",
-            "text": "",
-            "link_label": "SHOP RANGE",
-            "link": "shopify://collections/is-clinical"
           }
         },
         "column_7aLRgX": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_65.png",
+            "image": "shopify://shop_images/Mask_Group_81.png",
             "title": "MEDIK8",
             "text": "",
             "link_label": "SHOP RANGE",
             "link": "shopify://collections/medik8"
           }
-        },
-        "column_WaPYBQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Mask_Group_62.png",
-            "title": "SKINCEUTICALS",
-            "text": "",
-            "link_label": "SHOP RANGE",
-            "link": "shopify://collections/skinceuticals-bestsellers"
-          }
-        },
-        "column_L7wkrw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Mask_Group_62.png",
-            "title": "SKINCEUTICALS",
-            "text": "",
-            "link_label": "SHOP RANGE",
-            "link": "shopify://collections/skinceuticals-bestsellers"
-          }
         }
       },
       "block_order": [
         "column_7AwLni",
-        "column_7i7aFz",
-        "column_WDiBjh",
-        "column_7aLRgX",
-        "column_WaPYBQ",
-        "column_L7wkrw"
+        "column_7aLRgX"
       ],
       "custom_css": [
         "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}",
@@ -211,8 +167,8 @@
         "title": "SHOP BY CATEGORY",
         "heading_size": "h2",
         "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 6,
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
@@ -221,6 +177,78 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 52,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_WwRVV7": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TU8tDg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_63.png",
+            "title": "SKINADE",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/skinade"
+          }
+        },
+        "column_NWNX99": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_64.png",
+            "title": "IS CLINICAL",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/is-clinical"
+          }
+        },
+        "column_JAdTMW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_66.png",
+            "title": "KERASTASE",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/kerastase"
+          }
+        },
+        "column_DkGQep": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_67.png",
+            "title": "CERAVE",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/cerave"
+          }
+        }
+      },
+      "block_order": [
+        "column_TU8tDg",
+        "column_NWNX99",
+        "column_JAdTMW",
+        "column_DkGQep"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 600; color: #541c6d; margin-bottom: -20px; margin-top: -10px;}",
+        "img {border-radius: 10px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -555,6 +583,7 @@
     "slideshow_8K9EQW",
     "166332543877683c38",
     "multicolumn_wzPM77",
+    "multicolumn_WwRVV7",
     "collage_7N3J3P",
     "166332976210870fc9",
     "1663663532f6f3adfe",
