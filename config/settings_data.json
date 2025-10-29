@@ -123,7 +123,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Autumn Sale - Up to 40% OFF",
+              "text": "AUTUMN SALE - Up to 40% OFF",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -141,6 +141,10 @@
         "block_order": [
           "announcement-bar-0",
           "c34e838d-b728-4277-adec-91264536947c"
+        ],
+        "custom_css": [
+          ".announcement-bar {background-image: linear-gradient(to bottom right, #df3725, #f7971c);}",
+          "p {font-weight: 600;}"
         ],
         "settings": {}
       },
