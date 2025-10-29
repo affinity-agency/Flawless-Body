@@ -162,41 +162,41 @@
         "column_JAWEHb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_62_062aa95a-22d0-46c7-9e71-8dfa8877d69a.png",
-            "title": "PRODUCT TYPE",
+            "image": "shopify://shop_images/4.png",
+            "title": "Sunscreens",
             "text": "",
             "link_label": "SHOP RANGE",
-            "link": "shopify://collections/skinceuticals-bestsellers"
+            "link": "shopify://collections/skinceuticals-sunscreens"
           }
         },
         "column_n8CkNV": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_64_863e6ded-c572-4699-b787-9e94e4d89fee.png",
-            "title": "SKIN CONCERN",
+            "image": "shopify://shop_images/7.png",
+            "title": "Eye & Lip Care",
             "text": "",
             "link_label": "SHOP RANGE",
-            "link": "shopify://collections/medik8"
+            "link": "shopify://collections/eye-lip-care-1"
           }
         },
         "column_iqH9wR": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_71.png",
-            "title": "SKIN TYPE",
+            "image": "shopify://shop_images/5.png",
+            "title": "Corrective Serums & Creams",
             "text": "",
             "link_label": "SHOP RANGE",
-            "link": "shopify://collections/medik8"
+            "link": "shopify://collections/skin-ceuticals-ageing-skin"
           }
         },
         "column_6FeYia": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_72.png",
-            "title": "SKIN REGIMEN",
+            "image": "shopify://shop_images/6.png",
+            "title": "Moisturise & Hydrating Serums",
             "text": "",
             "link_label": "SHOP RANGE",
-            "link": "shopify://collections/medik8"
+            "link": "shopify://collections/dehydrated-skin"
           }
         }
       },
@@ -206,12 +206,17 @@
         "column_iqH9wR",
         "column_6FeYia"
       ],
+      "custom_css": [
+        "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}",
+        "h3 {font-weight: 600; color: #541c6d; margin-bottom: -20px; margin-top: -10px;}",
+        "img {border-radius: 10px;}"
+      ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
         "heading_size": "h2",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
