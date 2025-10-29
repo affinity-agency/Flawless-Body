@@ -279,14 +279,19 @@
     },
     "featured_collection_ECzgaU": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-weight: 400; color: #541c6d;}",
+        ".card {border-radius: 10px;}",
+        ".badge {background-color: #df3725;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "POPULAR THIS WEEK...",
+        "title": "SHOP BY BESTSELLERS...",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "frontpage",
+        "collection": "skinceuticals-bestsellers",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
