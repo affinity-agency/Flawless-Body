@@ -16,24 +16,20 @@
         "section_id": "pf-f71b4f2e"
       }
     },
-    "69baeda2-9f52-4c6e-8730-b46d7cfb7c6d": {
+    "usp_j9apyC": {
       "type": "usp",
-      "custom_css": [
-        "a {text-decoration: none; display: inline-block; color: #553369;}",
-        "a div {float: right; padding-left: 10px;}"
-      ],
       "settings": {
-        "first-usp-text": "FREE DELIVERY OVER £30/€100",
-        "first-usp-icon": "shopify://shop_images/icon_delivery.png",
+        "first-usp-text": "FREE DELIVERY OVER £25",
+        "first-usp-icon": "shopify://shop_images/Delivery.svg",
         "first-usp-url": "https://flawlessbody-shop.myshopify.com/pages/delivery-info",
         "second-usp-text": "EST. AESTHETIC SKIN CLINIC SINCE 06",
-        "second-usp-icon": "shopify://shop_images/icon_established.png",
-        "second-usp-url": "https://www.flawlessbody.co.uk/?AspxAutoDetectCookieSupport=1",
-        "third-usp-text": "OFFICIAL STOCKIST OF ALL BRANDS",
-        "third-usp-icon": "shopify://shop_images/icon_official_2.png",
-        "third-usp-url": "https://flawlessbody-shop.myshopify.com/collections/all",
+        "second-usp-icon": "shopify://shop_images/Established.svg",
+        "second-usp-url": "https://www.flawlessbodyclinic.co.uk",
+        "third-usp-text": "OFFICIAL STOCKISTS OF ALL BRANDS",
+        "third-usp-icon": "shopify://shop_images/Official_Stockist.svg",
+        "third-usp-url": "https://flawlessbody.co.uk/collections/skinceuticals",
         "fourth-usp-text": "5 STAR REVIEWS ON REVIEW.IO",
-        "fourth-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "fourth-usp-icon": "shopify://shop_images/Trustpilot_Star_60a3f638-53d1-4ef9-b351-e5691ef866bb.svg",
         "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
       }
     },
@@ -255,7 +251,7 @@
   },
   "order": [
     "1660934035135e8f6f",
-    "69baeda2-9f52-4c6e-8730-b46d7cfb7c6d",
+    "usp_j9apyC",
     "4f465d0e-0685-4f71-8990-f13df3c64f8f",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
