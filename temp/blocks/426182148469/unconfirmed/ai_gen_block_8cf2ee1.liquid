@@ -1,6 +1,373 @@
+{% doc %}
+  @prompt
+    a multi column with icon section for a USP bar - sapce to add an icon / image with settings to choose the size and space for some text to sit next to it - up to 4 columns
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-usp-bar-{{ ai_gen_id }} {
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+  }
+
+  .ai-usp-bar-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-usp-bar-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.column_gap }}px;
+    align-items: center;
+  }
+
+  .ai-usp-bar-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.icon_text_gap }}px;
+    justify-content: {{ block.settings.alignment }};
+  }
+
+  .ai-usp-bar-icon-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-usp-bar-icon-wrapper-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ai-usp-bar-icon-wrapper-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-usp-bar-text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-usp-bar-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-usp-bar-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+      gap: {{ block.settings.column_gap | times: 0.75 }}px;
+    }
+
+    .ai-usp-bar-icon-wrapper-{{ ai_gen_id }} {
+      width: {{ block.settings.icon_size | times: 0.8 }}px;
+      height: {{ block.settings.icon_size | times: 0.8 }}px;
+    }
+
+    .ai-usp-bar-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+
+    .ai-usp-bar-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_vertical | times: 0.75 }}px {{ block.settings.padding_horizontal | times: 0.75 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-usp-bar-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-usp-bar-container-{{ ai_gen_id }}">
+    <div class="ai-usp-bar-grid-{{ ai_gen_id }}">
+      {% for i in (1..4) %}
+        {% liquid
+          assign enabled_key = 'column_' | append: i | append: '_enabled'
+          assign icon_key = 'column_' | append: i | append: '_icon'
+          assign text_key = 'column_' | append: i | append: '_text'
+          
+          assign enabled = block.settings[enabled_key]
+          assign icon = block.settings[icon_key]
+          assign text = block.settings[text_key]
+        %}
+
+        {% if enabled %}
+          <div class="ai-usp-bar-item-{{ ai_gen_id }}">
+            <div class="ai-usp-bar-icon-wrapper-{{ ai_gen_id }}">
+              {% if icon != blank %}
+                <img
+                  src="{{ icon | image_url: width: 200 }}"
+                  alt="{{ text | escape }}"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                >
+              {% else %}
+                {{ 'image' | placeholder_svg_tag }}
+              {% endif %}
+            </div>
+            {% if text != blank %}
+              <p class="ai-usp-bar-text-{{ ai_gen_id }}">{{ text }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "USP bar",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1600
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on tablet",
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Content alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Icon"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "icon_text_gap",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon to text gap",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f2ecf5"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Column 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "column_1_enabled",
+      "label": "Enable column 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "column_1_icon",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "column_1_text",
+      "label": "Text",
+      "default": "Free shipping over £50"
+    },
+    {
+      "type": "header",
+      "content": "Column 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "column_2_enabled",
+      "label": "Enable column 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "column_2_icon",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "column_2_text",
+      "label": "Text",
+      "default": "30-day returns"
+    },
+    {
+      "type": "header",
+      "content": "Column 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "column_3_enabled",
+      "label": "Enable column 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "column_3_icon",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "column_3_text",
+      "label": "Text",
+      "default": "Secure checkout"
+    },
+    {
+      "type": "header",
+      "content": "Column 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "column_4_enabled",
+      "label": "Enable column 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "column_4_icon",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "column_4_text",
+      "label": "Text",
+      "default": "24/7 support"
+    }
+  ],
+  "presets": [
+    {
+      "name": "USP bar"
+    }
+  ]
+}
 {% endschema %}
