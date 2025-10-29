@@ -26,7 +26,7 @@
       "custom_css": [
         "a {text-decoration: none; display: inline-block; color: #553369;}",
         "a div {float: right; padding-left: 10px;}",
-        "a {text-align: center; }"
+        "a {text-align: center;}"
       ],
       "settings": {
         "first-usp-text": "FREE DELIVERY OVER £25",
@@ -45,6 +45,7 @@
     },
     "1663320144a964ee9d": {
       "type": "hero",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "hero-heading": "THE POWER OF INTEGRATED SKINCARE",
@@ -56,6 +57,42 @@
         "above-header-url": "/collections/skinceuticals",
         "below-subtitle-image": "shopify://shop_images/fb_sc_official_partner_2x_1cb0edf9-fcbc-4056-a748-51c9a76de8c9.png",
         "below-subtitle-url": "/collections/skinceuticals"
+      }
+    },
+    "slideshow_8K9EQW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_9XqPj7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/homepage_c1e8472c-8234-4f01-83a9-a05888c6dc2e.jpg",
+            "heading": "SkinCeuticals Advanced Proffesional Skincare",
+            "heading_size": "h0",
+            "subheading": "Back by science From only £25.50",
+            "button_label": "SHOP THE RANGE",
+            "link": "shopify://collections/skinceuticals-bestsellers",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_9XqPj7"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "166332543877683c38": {
@@ -358,6 +395,7 @@
     "16609006403302aec6",
     "d9ca3799-0b04-43c6-8cb2-e92a8b79c32c",
     "1663320144a964ee9d",
+    "slideshow_8K9EQW",
     "166332543877683c38",
     "166332976210870fc9",
     "1663663532f6f3adfe",
