@@ -1,0 +1,274 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1660934035135e8f6f": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-f71b4f2e"
+      }
+    },
+    "69baeda2-9f52-4c6e-8730-b46d7cfb7c6d": {
+      "type": "usp",
+      "custom_css": [
+        "a {text-decoration: none; display: inline-block; color: #553369;}",
+        "a div {float: right; padding-left: 10px;}"
+      ],
+      "settings": {
+        "first-usp-text": "FREE DELIVERY OVER £30/€100",
+        "first-usp-icon": "shopify://shop_images/icon_delivery.png",
+        "first-usp-url": "https://flawlessbody-shop.myshopify.com/pages/delivery-info",
+        "second-usp-text": "EST. AESTHETIC SKIN CLINIC SINCE 06",
+        "second-usp-icon": "shopify://shop_images/icon_established.png",
+        "second-usp-url": "https://www.flawlessbody.co.uk/?AspxAutoDetectCookieSupport=1",
+        "third-usp-text": "OFFICIAL STOCKIST OF ALL BRANDS",
+        "third-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "third-usp-url": "https://flawlessbody-shop.myshopify.com/collections/all",
+        "fourth-usp-text": "5 STAR REVIEWS ON REVIEW.IO",
+        "fourth-usp-icon": "shopify://shop_images/icon_official_2.png",
+        "fourth-usp-url": "https://www.reviews.co.uk/company-reviews/store/flawlessbeautygroup-com"
+      }
+    },
+    "4f465d0e-0685-4f71-8990-f13df3c64f8f": {
+      "type": "hero",
+      "settings": {
+        "hero-heading": "SkinCeuticals",
+        "hero-subtitle": "<p><br/>THE POWER OF INTEGRATED SKINCARE</p><p>COMBINING AESTHETIC PROCEDURES WITH  SKINCEUTICALS FOR OPTIMISED RESULTS</p>",
+        "hero-text": "<p>TREATMENT + HOMECARE = OPTIMISED RESULTS</p>",
+        "hero-button-url": "",
+        "hero-background": "shopify://shop_images/SkinC.jpg",
+        "above-header-image": "shopify://shop_images/skinceuticalslogo-1659091960645.webp",
+        "above-header-url": "",
+        "below-subtitle-image": "shopify://shop_images/FBS---Offical.png",
+        "below-subtitle-url": ""
+      }
+    },
+    "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5": {
+      "type": "collections-slider",
+      "settings": {
+        "collection_section_title": "<p>SHOP BY <strong>SKINCARE</strong></p>",
+        "collection_list": [
+          "blemish-imperfections-1",
+          "uneven-skin-tone",
+          "skin-ceuticals-ageing-skin",
+          "dehydrated-skin",
+          "eye-lip-care-1",
+          "face-masks-1",
+          "sensitive-redness-prone"
+        ]
+      }
+    },
+    "04f72a33-108f-4aca-892d-e5bd6565806b": {
+      "type": "best-sellers-slider",
+      "custom_css": [],
+      "settings": {
+        "product_list": [
+          "ce-ferulic-30ml",
+          "ha-intensifier-30ml",
+          "blemish-age-defense-30ml",
+          "triple-lipid-restore-2-4-2-48ml",
+          "a-g-e-eye-complex-15ml",
+          "advanced-brightening-uv-defense-spf50-40ml",
+          "phloretin-cf-serum-30ml",
+          "phyto-a-brightening-treatment-30ml",
+          "simply-clean-200ml",
+          "skinceuticals-daily-duo-c-e-ferulic-kit",
+          "discolouration-defense-serum-30ml",
+          "hydrating-b5-30ml"
+        ],
+        "shop_all_button_url": "https://flawlessbody.co.uk/collections/skinceuticals-bestsellers"
+      }
+    },
+    "77e34945-0a92-492f-bbf8-a864c27a0958": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "skinceuticals-bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fbc03d75-1318-43a3-b3ae-4549b8be7cf5": {
+      "type": "full-width-cta-with-image-panel",
+      "settings": {
+        "title": "<p><strong>ADVANCED PROFESSIONAL SKINCARE</strong></p>",
+        "description": "<p>At SkinCeuticals, their mission is to improve skin health. They are committed to leading the skin-care industry in terms of scientific research and innovation, and promise to provide advanced skincare backed by science that will lead to healthy skin.</p><p>Their skin care philosophy centres around three fundamental principles: Prevent. Correct. Protect. These principles work synergistically to provide healthier looking skin, in an optimal anti-ageing skincare programme suitable for all skin types.</p><p><strong>Flawless Body</strong> is one of their chosen few authorised online retailers.  You can be rest assured that when you purchase SkinCeuticals products from us, you will be getting <strong>GENUINE</strong> product at fantastic prices.  Things to check if the retailer and product is genuine include:</p><ul><li><strong>Can you buy the whole range?</strong></li><li><strong>Do they supply samples?</strong></li><li><strong>Can you find them listed on skinceuticals.co.uk as an authorised retailer?</strong></li></ul>",
+        "button_text": "",
+        "button_url": "",
+        "side_image": "shopify://shop_images/hero_main_mobile_2x_1424baf6-dcb0-4065-9dd2-f327ea7b1335.png",
+        "background_image": "shopify://shop_images/ruler-banner2x-1660052010544.webp",
+        "text_alignment": "left"
+      }
+    },
+    "b7444a7e-7402-4254-a3d7-5095ee573d3b": {
+      "type": "full-width-cta-with-image-panel",
+      "disabled": true,
+      "settings": {
+        "title": "<p>LOREM <strong>IPSUM</strong></p>",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+        "button_text": "SHOP NOW",
+        "button_url": "#",
+        "side_image": "shopify://shop_images/hero_main_mobile_2x_1424baf6-dcb0-4065-9dd2-f327ea7b1335.png",
+        "background_image": "shopify://shop_images/ruler-banner2x-1660052010544.webp",
+        "text_alignment": "flex-row-reverse"
+      }
+    },
+    "d74b1bd4-1e01-4861-b57b-d64f6ecf511a": {
+      "type": "selected-blog-posts-slider",
+      "settings": {
+        "selected_blog_posts_section_title": "<p>THE SCIENCE BEHIND <strong>SKINCEUTICALS</strong></p>",
+        "blog": "science-behind-skinceuticals"
+      }
+    },
+    "6ac9979c-b73e-4267-96d6-fc788de55558": {
+      "type": "full-width-cta-with-collection-slider",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "<p>BUILD <strong>YOUR REGIMEN</strong></p>",
+        "description": "<p>Discover the SkinCeuticals philosophy for healthy skin</p>",
+        "button_text": "",
+        "button_url": "",
+        "collections": [
+          "advanced-nutrition-programme",
+          "brush-on-block",
+          "cerave",
+          "haircare",
+          "heliocare",
+          "kerastase"
+        ],
+        "background_image": "shopify://shop_images/ruler-banner2x-1660052010544.webp",
+        "text_alignment": "left"
+      }
+    },
+    "a68f2a93-4915-493b-be0a-5caa47defb19": {
+      "type": "Regime-builder",
+      "custom_css": [],
+      "settings": {
+        "title": "<p>BUILD <strong>YOUR REGIMEN</strong></p>",
+        "description": "<p>Discover the SkinCeuticals philosophy for healthy skin</p>",
+        "button_text": "",
+        "button_url": "",
+        "collections": [
+          "regime-cleanse-tone",
+          "regime-correct",
+          "regime-moisturise",
+          "regime-prevent",
+          "regime-protect"
+        ],
+        "background_image": "shopify://shop_images/ruler-banner2x-1660052010544.webp",
+        "text_alignment": "left"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "pf-8659a710": {
+      "type": "pf-8659a710",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "166093405232e52fe5": {
+      "type": "pagefly-section",
+      "disabled": true,
+      "settings": {
+        "section_id": "pf-e8891b3b"
+      }
+    },
+    "dce0f1b1-97c7-40fe-a09a-619be5cbb198": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15549037772940__dce0f1b1-97c7-40fe-a09a-619be5cbb198-16819035111826f014-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO HEAR ABOUT OUR LATEST NEWS & OFFERS",
+            "heading_size": "h2"
+          }
+        },
+        "template--15549037772940__dce0f1b1-97c7-40fe-a09a-619be5cbb198-16819035111826f014-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--15549037772940__dce0f1b1-97c7-40fe-a09a-619be5cbb198-16819035111826f014-0",
+        "template--15549037772940__dce0f1b1-97c7-40fe-a09a-619be5cbb198-16819035111826f014-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "1660934035135e8f6f",
+    "69baeda2-9f52-4c6e-8730-b46d7cfb7c6d",
+    "4f465d0e-0685-4f71-8990-f13df3c64f8f",
+    "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
+    "04f72a33-108f-4aca-892d-e5bd6565806b",
+    "77e34945-0a92-492f-bbf8-a864c27a0958",
+    "fbc03d75-1318-43a3-b3ae-4549b8be7cf5",
+    "b7444a7e-7402-4254-a3d7-5095ee573d3b",
+    "d74b1bd4-1e01-4861-b57b-d64f6ecf511a",
+    "6ac9979c-b73e-4267-96d6-fc788de55558",
+    "a68f2a93-4915-493b-be0a-5caa47defb19",
+    "banner",
+    "pf-8659a710",
+    "product-grid",
+    "166093405232e52fe5",
+    "dce0f1b1-97c7-40fe-a09a-619be5cbb198"
+  ]
+}
