@@ -125,7 +125,7 @@
         "button_a8GF3q"
       ],
       "custom_css": [
-        "h2 {font-weight: 400; color: #541c6d;}"
+        "h1 {font-weight: 400; color: #541c6d; line-height: 40px;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
