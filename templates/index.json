@@ -119,6 +119,7 @@
     },
     "166332543877683c38": {
       "type": "category-panels",
+      "disabled": true,
       "settings": {
         "categories": [
           "skincare",
@@ -141,29 +142,64 @@
             "link": "shopify://collections/skinceuticals-bestsellers"
           }
         },
-        "column_WiaTwf": {
+        "column_7i7aFz": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/Mask_Group_63.png",
+            "title": "SKINADE",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/skinade"
           }
         },
-        "column_fG6G7U": {
+        "column_WDiBjh": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/Mask_Group_64.png",
+            "title": "IS CLINICAL",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/is-clinical"
+          }
+        },
+        "column_7aLRgX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_65.png",
+            "title": "MEDIK8",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/medik8"
+          }
+        },
+        "column_WaPYBQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_62.png",
+            "title": "SKINCEUTICALS",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/skinceuticals-bestsellers"
+          }
+        },
+        "column_L7wkrw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_62.png",
+            "title": "SKINCEUTICALS",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/skinceuticals-bestsellers"
           }
         }
       },
       "block_order": [
         "column_7AwLni",
-        "column_WiaTwf",
-        "column_fG6G7U"
+        "column_7i7aFz",
+        "column_WDiBjh",
+        "column_7aLRgX",
+        "column_WaPYBQ",
+        "column_L7wkrw"
       ],
       "custom_css": [
         "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}",
@@ -184,7 +220,7 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 52,
         "padding_bottom": 36
       }
     },
