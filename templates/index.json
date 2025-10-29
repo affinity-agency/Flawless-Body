@@ -167,7 +167,7 @@
       ],
       "custom_css": [
         "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}",
-        "h3 {font-weight: 600; color: #541c6d; margin-bottom: -20px;}",
+        "h3 {font-weight: 600; color: #541c6d; margin-bottom: -20px; margin-top: -10px;}",
         "img {border-radius: 10px;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
