@@ -79,10 +79,29 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_BPUNeM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Hero_2.png",
+            "heading": "Medik8 Youth Activating Day and Night Cream",
+            "heading_size": "h0",
+            "subheading": "Save 20% on Medik8's Revoltionery cream",
+            "button_label": "SHOP NOW & SAVE",
+            "link": "shopify://collections/medik8",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "slide_9XqPj7"
+        "slide_9XqPj7",
+        "slide_BPUNeM"
       ],
       "custom_css": [
         "h2 {line-height: 55px;}"
