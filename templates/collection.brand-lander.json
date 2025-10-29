@@ -100,35 +100,51 @@
         "column_wTJhBd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_80.png",
-            "title": "SKINCEUTICALS",
+            "image": "shopify://shop_images/one.png",
+            "title": "Antioxidents & Vitamin C Serums",
             "text": "",
             "link_label": "SHOP RANGE",
-            "link": "shopify://collections/skinceuticals-bestsellers"
+            "link": "shopify://collections/uneven-skin-tone"
           }
         },
         "column_xR4KjT": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_81.png",
-            "title": "MEDIK8",
+            "image": "shopify://shop_images/three.png",
+            "title": "Face Masks",
             "text": "",
             "link_label": "SHOP RANGE",
-            "link": "shopify://collections/medik8"
+            "link": "shopify://collections/face-masks-1"
+          }
+        },
+        "column_yGxRCY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/two.png",
+            "title": "Cleansers & Toners",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/blemish-imperfections-1"
           }
         }
       },
       "block_order": [
         "column_wTJhBd",
-        "column_xR4KjT"
+        "column_xR4KjT",
+        "column_yGxRCY"
+      ],
+      "custom_css": [
+        "h2 {margin-left: 14px; font-weight: 400; color: #541c6d;}",
+        "h3 {font-weight: 600; color: #541c6d; margin-bottom: -20px; margin-top: -10px;}",
+        "img {border-radius: 10px;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "SHOP BY CATEGORY",
+        "title": "BROWSE BY:",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
@@ -137,6 +153,74 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_pwJwNY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JAWEHb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_62_062aa95a-22d0-46c7-9e71-8dfa8877d69a.png",
+            "title": "PRODUCT TYPE",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/skinceuticals-bestsellers"
+          }
+        },
+        "column_n8CkNV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_64_863e6ded-c572-4699-b787-9e94e4d89fee.png",
+            "title": "SKIN CONCERN",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/medik8"
+          }
+        },
+        "column_iqH9wR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_71.png",
+            "title": "SKIN TYPE",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/medik8"
+          }
+        },
+        "column_6FeYia": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_Group_72.png",
+            "title": "SKIN REGIMEN",
+            "text": "",
+            "link_label": "SHOP RANGE",
+            "link": "shopify://collections/medik8"
+          }
+        }
+      },
+      "block_order": [
+        "column_JAWEHb",
+        "column_n8CkNV",
+        "column_iqH9wR",
+        "column_6FeYia"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -398,6 +482,7 @@
     "4f465d0e-0685-4f71-8990-f13df3c64f8f",
     "image_banner_MCxmDB",
     "multicolumn_yjqggt",
+    "multicolumn_pwJwNY",
     "rich_text_WJPPUt",
     "b2ad2473-d7dc-4f83-b8a7-b57be3c588d5",
     "04f72a33-108f-4aca-892d-e5bd6565806b",
