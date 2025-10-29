@@ -25,7 +25,8 @@
       "type": "usp",
       "custom_css": [
         "a {text-decoration: none; display: inline-block; color: #553369;}",
-        "a div {float: right; padding-left: 10px;}"
+        "a div {float: right; padding-left: 10px;}",
+        "a {text-align: center;}"
       ],
       "settings": {
         "first-usp-text": "FREE DELIVERY OVER £25",
